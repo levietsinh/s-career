@@ -46,3 +46,9 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### `npm run deploy`
+
+### Design
+# Material Styles: https://www.figma.com/file/AmVAGVvHGJqXiD0GE46MBa/portfolio--landing-page--website-(Community)?node-id=241%3A453&t=1JMyazVmkJuHTPzp-0
+# Expand Items: https://www.figma.com/file/4gdxpZRnxPLwL2kUj0Rtmk/Landing-page---Language-learning-school-(Community)?node-id=1%3A2&t=ZRWyWTVzA372wDqZ-0
+# Color: https://www.figma.com/file/5Y9I73j0CIApVAuBCOqrdz/Food-Web-Landing-Page-(Community)?node-id=10%3A77&t=kUK4Zj5g6FY7HZ1E-0
+# UI: https://www.figma.com/file/wyuNENYCHwK6XxfuJPt9zn/UI-HUT-Landing-Pages-(Community)?node-id=20%3A0&t=XQy08zahFv9KJkEA-0
