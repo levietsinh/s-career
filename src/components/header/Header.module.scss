@@ -1,3 +1,30 @@
 .header {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 10%;
+  &-logo {
+
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+        + li {
+          margin-left: 58px;
+        }
+        img.header-mode {
+          width: 32px;
+        }
+      }
+    }
+  }
 }
