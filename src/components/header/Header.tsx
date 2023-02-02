@@ -4,8 +4,8 @@ import React from "react"
 import styles from "./Header.module.scss";
 
 // Images
-import logoImg from "../../assets/images/logo.svg";
-import modeImg from "../../assets/images/dark-mode.png";
+import logoImg from "assets/images/logo.svg";
+import modeImg from "assets/images/dark-mode.png";
 
 const Header = () => {
   return (

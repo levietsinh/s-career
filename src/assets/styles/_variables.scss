@@ -15,7 +15,19 @@
   font-weight: 900;
 }
 
-@mixin flex-between {
+// Colors
+$red-coral: #EE4248;
+$red-light: #FF464F;
+$red-bean: #FF575F;
+$red-misty: #FFE5E7;
+
+// Box Shadow
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+
+// Mixins
+
+@mixin flex-center {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }

@@ -52,3 +52,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 # Expand Items: https://www.figma.com/file/4gdxpZRnxPLwL2kUj0Rtmk/Landing-page---Language-learning-school-(Community)?node-id=1%3A2&t=ZRWyWTVzA372wDqZ-0
 # Color: https://www.figma.com/file/5Y9I73j0CIApVAuBCOqrdz/Food-Web-Landing-Page-(Community)?node-id=10%3A77&t=kUK4Zj5g6FY7HZ1E-0
 # UI: https://www.figma.com/file/wyuNENYCHwK6XxfuJPt9zn/UI-HUT-Landing-Pages-(Community)?node-id=20%3A0&t=XQy08zahFv9KJkEA-0
+# UI Color: https://www.figma.com/file/gh9e8AUuoyHCWCtJiboJXe/DSI-Web-Landing-Page---Redesign-(Community)?node-id=0%3A1&t=kg2NS7w4JE8lUGNZ-0
