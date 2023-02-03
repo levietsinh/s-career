@@ -1,23 +1,29 @@
 import React from "react";
 import styles from "./Categories.module.scss";
-import htmlIcon from "assets/images/html.png";
+import { categoriesList } from "data/categories";
 
 const Categories = () => {
-  const categories = [
-    
-  ];
-
+  interface ICategory {
+    name: string;
+    image: string;
+  }
   return (
     <div className={styles["categories"]}>
       <ul>
-        <li className={styles["category"]}>
-          <div className={styles["category-icon"]}>
-            <img src={htmlIcon} alt="HTML Icon" />
-          </div>
-          <span>HTML</span>
-        </li>
+        {categoriesList.map((item: ICategory) => (
+          <li key={item.name} className={styles["category"]}>
+            <div className={styles["category-icon"]}>
+              <img
+                className={item.name === "ReactJs" ? styles["rotate"] : ""}
+                src={require(`assets/images/${item.image}`)}
+                alt="HTML Icon"
+              />
+            </div>
+            <span>{item.name}</span>
+          </li>
+        ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 export default Categories;

@@ -1,19 +1,21 @@
-import React from 'react';
+import React from "react";
 // import GlobalStyles from './components/global-styles/GlobalStyles';
 import "assets/styles/reset.css";
 import "assets/styles/_common.scss";
-import Header from 'components/header/Header';
-import Home from 'components/home/Home';
-import Categories from 'components/categories/Categories';
+import Header from "components/header/Header";
+import Home from "components/home/Home";
+import Categories from "components/categories/Categories";
+import Footer from "components/footer/Footer";
 
 function App() {
   return (
     // <GlobalStyles>
-      <div className="App">
-        <Header/>
-        <Home/>
-        <Categories/>
-      </div>
+    <div className="App">
+      <Header />
+      <Home />
+      <Categories />
+      <Footer />
+    </div>
     // </GlobalStyles>
   );
 }

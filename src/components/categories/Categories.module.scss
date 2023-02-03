@@ -1,12 +1,21 @@
 @import "assets/styles/_common.scss";
 
 .categories {
+  margin-top: 80px;
+  margin-bottom: 48px;
+
   ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     li {
       background-color: $red-bean;
       width: 180px;
       height: 100px;
       border-radius: 28px;
+      cursor: pointer;
+
       &.category {
         position: relative;
         box-shadow: $box-shadow;
@@ -22,11 +31,17 @@
           right: 50%;
           transform: translateX(50%);
           border-radius: 50%;
+
           img {
             width: 100%;
             height: 100%;
+
+            &.rotate {
+              @include animation-wheel;
+            }
           }
         }
+
         span {
           font-size: 20px;
           color: white;

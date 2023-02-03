@@ -21,6 +21,14 @@ $red-light: #FF464F;
 $red-bean: #FF575F;
 $red-misty: #FFE5E7;
 
+$gray-primary: #222;
+$gray-jungle: #1F2E35;
+$gray-pastel: #30444E;
+$gray-slate: #475E69;
+$gray-mercury: #E4E9F3;
+
+
+
 // Box Shadow
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 
@@ -30,4 +38,16 @@ $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin animation-wheel {
+  @keyframes wheel {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  animation: wheel 5s linear infinite;
 }

@@ -6,6 +6,8 @@ const Home = () => {
   return (
     <div className={styles["home"]}>
       <div className={styles["home-intro"]}>
+          <div className={styles["x-factor"]}/>
+          <div className={styles["o-factor"]}/>
         <div className={styles["home-avatar"]}>
           <img src={avatar} alt="S Character" />
         </div>

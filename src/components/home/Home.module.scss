@@ -19,10 +19,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20vh;
-    right: -40vh;
-    height: 160vh;
-    width: 160vh;
+    top: -50vh;
+    right: -60vh;
+    height: 150vh;
+    width: 142vh;
     border-radius: 50%;
     background-color: $red-coral;
     z-index: -1;
@@ -38,7 +38,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15vh;
+    margin-top: 25vh;
+    position: relative;
+    .x-factor {
+      position: absolute;
+      z-index: -1;
+      top: -24%;
+      left: 25%;
+      width: 400px;
+      height: 400px;
+      &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 200px;
+        width: 40px;
+        background-color: $red-misty;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
   }
   &-avatar {
     width: fit-content;

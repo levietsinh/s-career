@@ -1,0 +1,48 @@
+@import "assets/styles/common.scss";
+
+.footer {
+  box-shadow: 0px 0 8px rgba(0, 0, 0, 0.15);
+  &-copyright {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    padding: 20px;
+    background-color: $red-bean;
+  }
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 10vw;
+  }
+  &-name {
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  &-info, &-contact {
+    width: 30%;
+    h3 {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-top: 12px;
+      font-size: 18px;
+      color: $gray-slate;
+    }
+    img {
+      width: 18%;
+    }
+  }
+  &-social {
+    width: 35%;
+    text-align: center;
+    a + a {
+      margin-left: 20px;
+    }
+    img {
+      width: 32px;
+    }
+  }
+}
