@@ -3,7 +3,12 @@
 .categories {
   margin-top: 80px;
   margin-bottom: 48px;
-
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    text-align: center;
+  }
   ul {
     display: flex;
     justify-content: space-around;
@@ -15,6 +20,8 @@
       height: 100px;
       border-radius: 28px;
       cursor: pointer;
+      transition: .6s;
+      border: 2px solid transparent;
 
       &.category {
         position: relative;
@@ -46,6 +53,36 @@
           font-size: 20px;
           color: white;
           font-weight: bold;
+          transition: .6s;
+        }
+      }
+      &:hover {
+        background-color: white;
+        border: 2px solid $red-coral;
+        transition: .6s;
+        span {
+          color: $red-bean;
+          transition: .6s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .categories {
+    ul {
+      padding: 0 12px;
+      li {
+        width: calc(100% / 2 - 24px);
+        margin-bottom: 48px;
+        height: 92px;
+        &.category {
+          .category-icon {
+            width: 52px;
+            height: 52px;
+            border-width: 8px;
+          }
         }
       }
     }

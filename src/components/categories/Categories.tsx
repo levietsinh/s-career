@@ -9,6 +9,7 @@ const Categories = () => {
   }
   return (
     <div className={styles["categories"]}>
+      <h2>Libraries</h2>
       <ul>
         {categoriesList.map((item: ICategory) => (
           <li key={item.name} className={styles["category"]}>
