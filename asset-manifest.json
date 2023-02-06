@@ -1,14 +1,30 @@
 {
   "files": {
-    "main.css": "/s-career/static/css/main.073c9b0a.css",
-    "main.js": "/s-career/static/js/main.b697cf65.js",
-    "static/media/logo.svg": "/s-career/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/s-career/static/css/main.e1cc86c1.css",
+    "main.js": "/s-career/static/js/main.dbc36146.js",
+    "static/media/logo-red-mobile.png": "/s-career/static/media/logo-red-mobile.d89db89e6dcfbb3f589a.png",
+    "static/media/logo-mobile.png": "/s-career/static/media/logo-mobile.c8f18987e9fe80fb95c2.png",
+    "static/media/angular.png": "/s-career/static/media/angular.6ef35a2c031051ea3ce4.png",
+    "static/media/Roboto-Regular.ttf": "/s-career/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Black.ttf": "/s-career/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
+    "static/media/Roboto-Bold.ttf": "/s-career/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/dotnet.png": "/s-career/static/media/dotnet.a10a4f42b4a18f594def.png",
+    "static/media/zalo.png": "/s-career/static/media/zalo.f6d76a31244afadfef14.png",
+    "static/media/css.png": "/s-career/static/media/css.a327b6ba3be7d6e4fe57.png",
+    "static/media/html.png": "/s-career/static/media/html.c1ef11e910005d746d34.png",
+    "static/media/reactjs.png": "/s-career/static/media/reactjs.283bf42c605cfc49cf49.png",
+    "static/media/linkedin.png": "/s-career/static/media/linkedin.6892b3ae328c7a1e055f.png",
+    "static/media/javascript.png": "/s-career/static/media/javascript.74e3e46f758ce139f110.png",
+    "static/media/nodejs.png": "/s-career/static/media/nodejs.f99dcd15458d9f74b2fa.png",
+    "static/media/facebook.png": "/s-career/static/media/facebook.4f037d961598aff2a0a4.png",
+    "static/media/logo-red.svg": "/s-career/static/media/logo-red.f770ef20541985345d15972159fc1224.svg",
+    "static/media/logo.svg": "/s-career/static/media/logo.b6a9e223b4b2635367bb.svg",
     "index.html": "/s-career/index.html",
-    "main.073c9b0a.css.map": "/s-career/static/css/main.073c9b0a.css.map",
-    "main.b697cf65.js.map": "/s-career/static/js/main.b697cf65.js.map"
+    "main.e1cc86c1.css.map": "/s-career/static/css/main.e1cc86c1.css.map",
+    "main.dbc36146.js.map": "/s-career/static/js/main.dbc36146.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b697cf65.js"
+    "static/css/main.e1cc86c1.css",
+    "static/js/main.dbc36146.js"
   ]
 }
