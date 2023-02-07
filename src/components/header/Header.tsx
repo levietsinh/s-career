@@ -1,14 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+// Hooks
+import useDetectMobile from "hooks/DetectMobile";
 
 // Styles
 import styles from "./Header.module.scss";
 import clsx from "clsx";
-import useDetectMobile from "hooks/DetectMobile";
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(0);
   const [isShowMenu, setIsShowMenu] = useState(false);
   const isMobile = useDetectMobile();
+  const navigate = useNavigate();
+
+  const handleGoToHome = () => {
+    navigate(process.env.PUBLIC_URL);
+  };
+
+  const handleGoToLibraries = () => {
+    navigate(`${process.env.PUBLIC_URL}/libraries`)
+  }
 
   useEffect(() => {
     const onScroll = () => setIsScroll(window.pageYOffset);
@@ -50,8 +62,8 @@ const Header = () => {
             )}
           >
             <ul>
-              <li>Home</li>
-              <li>Projects</li>
+              <li onClick={handleGoToHome}>Home</li>
+              <li onClick={handleGoToLibraries}>Libraries</li>
               <li>
                 <img
                   className={styles["header-mode"]}
@@ -75,12 +87,13 @@ const Header = () => {
                 isScroll > 0 ? "-red" : ""
               }.svg`)}
               alt="S Logo"
+              onClick={handleGoToHome}
             />
           </div>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>Projects</li>
+              <li onClick={handleGoToHome}>Home</li>
+              <li onClick={handleGoToLibraries}>Libraries</li>
               <li>
                 <img
                   className={styles["header-mode"]}

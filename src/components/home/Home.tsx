@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Home.module.scss";
 import avatar from "assets/images/s-character.png";
-import Categories from "components/categories/Categories";
+import CategoriesCarousel from "components/home/categories-carousel/CategoriesCarousel";
 
 const Home = () => {
   return (
@@ -26,7 +26,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Categories/>
+      <CategoriesCarousel/>
     </>
   );
 };
