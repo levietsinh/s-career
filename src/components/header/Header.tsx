@@ -16,11 +16,13 @@ const Header = () => {
 
   const handleGoToHome = () => {
     navigate(process.env.PUBLIC_URL);
+    setIsShowMenu(false);
   };
 
   const handleGoToLibraries = () => {
-    navigate(`${process.env.PUBLIC_URL}/libraries`)
-  }
+    navigate(`${process.env.PUBLIC_URL}/libraries`);
+    setIsShowMenu(false);
+  };
 
   useEffect(() => {
     const onScroll = () => setIsScroll(window.pageYOffset);
@@ -38,7 +40,10 @@ const Header = () => {
     <>
       {isMobile ? (
         <header className={styles["header-mobile"]}>
-          <div className={styles["header-mobile__logo"]}>
+          <div
+            className={styles["header-mobile__logo"]}
+            onClick={handleGoToHome}
+          >
             <img
               src={require("assets/images/logo-mobile.png")}
               alt="Mobile Logo"

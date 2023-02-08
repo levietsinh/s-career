@@ -9,20 +9,20 @@
     position: absolute;
     width: 44vw;
     height: 30vw;
-    background-color: #FF575F;
+    background-color: $red-light;
     transform: rotate(45deg);
-    top: -80%;
-    left: -20%;
+    top: -62%;
+    left: -28%;
   }
   &::after {
     content: "";
     position: absolute;
-    width: 54vw;
-    height: 62vw;
+    width: 40vw;
+    height: 30vw;
     background-color: #FF575F;
     transform: rotate(45deg);
-    top: -100%;
-    right: -35%;
+    top: -58%;
+    right: 0;
     z-index: -1;
   }
   h2 {
@@ -123,11 +123,11 @@
 
 @media screen and (max-width: 767px) {
   .library-detail {
-    padding-top: 12vh;
+    padding: 12vh 8vw 40px 8vw;
     h2 {
       text-align: center;
       font-weight: bold;
-      font-size: 40px;
+      font-size: 32px;
       margin-bottom: 20px;
       color: $gray-primary;
     }
