@@ -1,48 +1,97 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+//Data
+import {data as library1} from "data/libraries/html";
+import {data as library2} from "data/libraries/css";
+import {data as library3} from "data/libraries/javascript";
+import {data as library4} from "data/libraries/angular";
+import {data as library5} from "data/libraries/reactjs";
+import {data as library6} from "data/libraries/vuejs";
 
 //Styles
 import styles from "./LibraryDetail.module.scss";
+import { useParams } from "react-router-dom";
+
+interface IReference {
+  id: number,
+  name: string,
+  link: string,
+}
+interface ILibrary {
+  id: number,
+  question: string,
+  answer: string,
+}
+interface IData {
+  name: string,
+  references: IReference[],
+  library: ILibrary[],
+}
 
 const LibraryDetail = () => {
-  const handleToggleQuestion = () => {
-    const questionEl = document.getElementById("question-1");
+  const {libraryId} = useParams();
+  const [data, setData] = useState<IData>(library1);
+
+  const handleGetData = () => {
+    switch(libraryId) {
+      case "2": return setData(library2);
+      case "3": return setData(library3);
+      case "4": return setData(library4);
+      case "5": return setData(library5);
+      case "6": return setData(library6);
+      default: return setData(library1);
+    }
+  };
+  const handleToggleQuestion = (id: number) => {
+    const questionEl = document.getElementById(`question-${id}`);
     const isShow = questionEl?.classList.contains("show");
     isShow
       ? questionEl?.classList.remove("show")
       : questionEl?.classList.add("show");
   };
+
+  useEffect(() => {
+    handleGetData();
+  }, [libraryId]);
+
   return (
     <div className={styles["library-detail"]}>
-      <h2>Title</h2>
+      <h2>{data.name}</h2>
       <div className={styles["library-container"]}>
         <ul className={styles["library-detail__list"]}>
-          <li id={`question-1`} className={styles["library-detail__item"]}>
-            <div className={styles["question"]}>
-              What is your name?
-              <span
-                className={styles["question-open"]}
-                onClick={handleToggleQuestion}
-              >
-                +
-              </span>
-              <span
-                className={styles["question-close"]}
-                onClick={handleToggleQuestion}
-              >
-                -
-              </span>
-            </div>
-            <div className={styles["answer"]}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-              odio et deserunt dolores quisquam, tempore culpa dicta natus
-              blanditiis labore recusandae vitae, repellat vero. Nulla veritatis
-              eligendi non ab. Vel?
-            </div>
-          </li>
+          {
+            data.library.length ? data.library.map((item: ILibrary) => (
+              <li key={item.id} id={`question-${item.id}`} className={styles["library-detail__item"]}>
+              <div className={styles["question"]}>
+                {item.question}
+                <span
+                  className={styles["question-open"]}
+                  onClick={() => handleToggleQuestion(item.id)}
+                >
+                  +
+                </span>
+                <span
+                  className={styles["question-close"]}
+                  onClick={() => handleToggleQuestion(item.id)}
+                >
+                  -
+                </span>
+              </div>
+              <div className={styles["answer"]}>
+                {item.answer}
+              </div>
+            </li>
+            )) : "No question"
+          }
         </ul>
         <div className={styles["references"]}>
           <h3>References</h3>
-          <a href="">References 1...</a>
+          {
+            data.references.length ? 
+            data.references?.map((item: IReference) => (
+              <a href={item.link} target="_blank" key={item.id}>{item.name}</a>
+            )) : "No reference."
+          }
         </div>
       </div>
     </div>

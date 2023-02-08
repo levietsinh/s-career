@@ -39,4 +39,9 @@ export const categoriesList = [
     name: ".Net",
     image: "dotnet.png",
   },
+  {
+    id: 9,
+    name: "Typescript",
+    image: "typescript.png",
+  }
 ];

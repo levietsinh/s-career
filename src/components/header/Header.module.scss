@@ -12,6 +12,10 @@
   transition: .6s;
   z-index: 1025;
 
+  &-logo {
+    cursor: pointer;
+  }
+
   nav {
     display: flex;
     justify-content: center;

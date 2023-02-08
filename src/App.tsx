@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route path={process.env.PUBLIC_URL} element={<Home/>}/>
         <Route path={`${process.env.PUBLIC_URL}/libraries`} element={<Library/>}/>
-        <Route path={`${process.env.PUBLIC_URL}/libraries/:id`} element={<LibraryDetail/>}/>
+        <Route path={`${process.env.PUBLIC_URL}/libraries/:libraryId`} element={<LibraryDetail/>}/>
       </Routes>
       <Footer />
     </div>
