@@ -7,6 +7,7 @@ import useDetectMobile from "hooks/DetectMobile";
 // Styles
 import styles from "./Header.module.scss";
 import clsx from "clsx";
+import logoSVG from "assets/images/logo-red.svg";
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(0);
@@ -40,44 +41,54 @@ const Header = () => {
     <>
       {isMobile ? (
         <header className={styles["header-mobile"]}>
-          <div
-            className={styles["header-mobile__logo"]}
-            onClick={handleGoToHome}
-          >
-            <img
-              src={require("assets/images/logo-mobile.png")}
-              alt="Mobile Logo"
-            />
+          <div className={styles["header-mobile__top"]}>
+            <div
+              className={styles["header-mobile__logo"]}
+              onClick={handleGoToHome}
+            >
+              <img
+                src={require("assets/images/logo-mobile.png")}
+                alt="Mobile Logo"
+              />
+            </div>
+            <button
+              className={clsx(
+                styles["menu-trigger"],
+                isShowMenu ? styles["active"] : ""
+              )}
+              onClick={() => setIsShowMenu(!isShowMenu)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
-          <button
+          <div
             className={clsx(
-              styles["menu-trigger"],
-              isShowMenu ? styles["active"] : ""
-            )}
-            onClick={() => setIsShowMenu(!isShowMenu)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav
-            className={clsx(
-              styles["header-mobile__nav"],
+              styles["header-mobile__bottom"],
               isShowMenu ? styles["show"] : ""
             )}
           >
-            <ul>
-              <li onClick={handleGoToHome}>Home</li>
-              <li onClick={handleGoToLibraries}>Libraries</li>
-              <li>
-                <img
-                  className={styles["header-mode"]}
-                  src={require(`assets/images/dark-mode.png`)}
-                  alt="Dark Mode"
-                />
-              </li>
-            </ul>
-          </nav>
+            <div className={styles["logo"]}>
+              <img
+                src={logoSVG}
+                alt="S Logo"
+              />
+            </div>
+            <nav className={clsx(styles["header-mobile__nav"])}>
+              <ul>
+                <li onClick={handleGoToHome}>Home</li>
+                <li onClick={handleGoToLibraries}>Libraries</li>
+                <li>
+                  <img
+                    className={styles["header-mode"]}
+                    src={require(`assets/images/dark-mode.png`)}
+                    alt="Dark Mode"
+                  />
+                </li>
+              </ul>
+            </nav>
+          </div>
         </header>
       ) : (
         <header

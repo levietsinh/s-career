@@ -59,9 +59,7 @@
 
   &-mobile {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 6%;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -69,7 +67,41 @@
     transition: .6s;
     z-index: 1025;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-    background-color: white;
+    
+    &__top {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 88%;
+      padding: 12px 6%;
+    }
+    
+    &__bottom {
+      background-color: white;
+      width: 100%;
+      z-index: 1024;
+      transition: .6s;
+      transform: translateX(-100%);
+      transition: .4s;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: calc(100vh - 61px);
+      &.show{
+        transform: translateX(0%);
+        transition: .4s;
+      }
+      .logo {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20vh;
+        width: 30%;
+        img {
+          width: 100%;
+        }
+      }
+    }
 
     &__logo {
       img {
@@ -129,18 +161,12 @@
     }
 
     &__nav {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: calc(100vh - 62px);
-      background-color: white;
-      z-index: 1024;
-      transition: .6s;
-      margin-top: 62px;
-      transform: translateX(-100%);
-      transition: .4s;
-      @include flex-center;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // right: 0;
+      // background-color: white;
+
 
       ul {
         text-align: center;
@@ -152,10 +178,6 @@
             margin-top: 24px;
           }
         }
-      }
-      &.show{
-        transform: translateX(0%);
-        transition: .4s;
       }
     }
   }
