@@ -1,10 +1,10 @@
 export const data = {
-  name: "VueJs",
+  name: "NodeJs",
   references: [
     {
       id: 1,
-      name: "Github - VueJs Interview Questions & Answers",
-      link: "https://github.com/sudheerj/vuejs-interview-questions",
+      name: "Github - JS Interview Questions & Answers",
+      link: "https://github.com/sudheerj/javascript-interview-questions",
     },
   ],
   library: [

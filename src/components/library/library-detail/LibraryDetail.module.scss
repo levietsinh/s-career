@@ -11,8 +11,8 @@
     height: 30vw;
     background-color: $red-light;
     transform: rotate(45deg);
-    top: -62%;
-    left: -28%;
+    top: -36vh;
+    left: -56vh;
   }
   &::after {
     content: "";
@@ -21,7 +21,7 @@
     height: 30vw;
     background-color: #FF575F;
     transform: rotate(45deg);
-    top: -58%;
+    top: -40vh;
     right: 0;
     z-index: -1;
   }
@@ -61,11 +61,12 @@
     }
     @include prevent-select;
     padding: 12px 24px;
-    border: 2px solid $gray-mercury;
+    border: 2px solid transparent;
     border-radius: 20px;
-    color: $gray-pastel;
+    background-color: $red-bean;
     transition: .6s;
     .question {
+      color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -74,9 +75,8 @@
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        border: 2px solid $red-misty;
-        background-color: $red-bean;
-        color: white;
+        background-color: white;
+        color: $red-bean;
         transition: .4s;
         @include flex-center;
       }
@@ -89,22 +89,22 @@
       height: 0;
       margin-top: 8px;
       border-radius: 20px;
-      color: $gray-pastel;
       line-height: 1.4;
       font-size: 14px;
     }
     &:global(.show) {
-      color: white;
-      background-color: $red-bean;
-      border-color: transparent;
-      span {
-        background-color: white;
-        color: $red-bean;
-        transition: .4s;
-      }
+      border-color: $gray-mercury;
+      color: $gray-pastel;
+      background-color: white;
       .question {
+        color: $gray-primary;
+        span {
+          border: 2px solid $red-misty;
+          background-color: $red-bean;
+          transition: .4s;
+          color: white;
+        }
         font-weight: bold;
-        color: white;
         &-open {
           display: none;
         }
@@ -115,7 +115,6 @@
       .answer {
         display: block;
         height: fit-content;
-        color: white;
       }
     }
   }
