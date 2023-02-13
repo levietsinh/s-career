@@ -93,7 +93,7 @@ const LibraryDetail = () => {
           {
             data.references?.length ? 
             data.references?.map((item: IReference) => (
-              <a href={item.link} target="_blank" key={item.id}>{item.name}</a>
+              <a href={item.link} target="_blank" rel="noreferrer" key={item.id}>{item.name}</a>
             )) : "No reference."
           }
         </div>
