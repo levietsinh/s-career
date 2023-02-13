@@ -59,7 +59,6 @@
     + li {
       margin-top: 16px
     }
-    @include prevent-select;
     padding: 12px 24px;
     border: 2px solid transparent;
     border-radius: 20px;
@@ -91,6 +90,9 @@
       border-radius: 20px;
       line-height: 1.4;
       font-size: 14px;
+      p {
+        line-height: 1.6;
+      }
     }
     &:global(.show) {
       border-color: $gray-mercury;

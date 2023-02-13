@@ -23,12 +23,27 @@ body {
   background: $red-bean; 
 }
 
-.code-space {
-  background-color: #eee;
-}
-
-.text-center {
-  text-align: center;
+.code-space, .prettyprinted {
+  margin: 12px 0;
+  padding: 8px 12px;
+  background-color: #ededed !important;
+  font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace!important;
+  
+  .hljs-string {
+    color: #008;
+  }
+  .kwd {
+    color: #4271ae;
+  }
+  .pln {
+    color: #718c00;
+  }
+  .typ {
+    color: #bd4147;
+  }
+  .pun, .hljs-params {
+    color: #212529;
+  }
 }
 
 .size-18 {
@@ -36,9 +51,24 @@ body {
 }
 
 .font-green {
-  color: rgb(13, 223, 13);
+  color: #718c00;
 }
 
 .font-red {
-  color: rgb(224, 43, 43);
+  color: #bd4147;
+}
+
+.font-blue {
+  color: #4271ae;
+}
+.font-jean {
+  color: #008;
+}
+
+.font-purple {
+  color: #99f;
+}
+
+.font-yellow {
+  color: #f5871f;
 }
