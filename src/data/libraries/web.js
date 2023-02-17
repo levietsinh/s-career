@@ -81,5 +81,50 @@ export const data = {
         </ul>
         `,
     },
+    {
+      id: 2,
+      question: "What are Static Generation, Server-side Rendering and Client-side Rendering?",
+      answer: `
+        <ul style="list-style: dot">
+          <li>
+            <strong style="font-weight: bold;">Static Generation</strong> is the pre-rendering method that generates the HTML at build time.
+            The pre-rendered HTML is then reused on each request.
+          </li>
+          <li>
+            <strong style="font-weight: bold;">Server-side Rendering</strong> is the pre-rendering method that generates the HTML on each request.
+            <br/>
+            <p>Used when the data needs to be up-to-date with every request</p>
+          </li>
+          <li>
+            <strong style="font-weight: bold;">Client-side Rendering</strong>:
+            <p>
+            If you do not need to pre-render the data, you can also use the following strategy (called Client-side Rendering):
+            </p>
+            <p>- Statically generate (pre-render) parts of the page that do not require external data.</p>
+            <p>- When the page loads, fetch external data from the client using JavaScript and populate the remaining parts.</p>
+            This approach works well for user dashboard pages, for example. 
+            Because a dashboard is a private, user-specific page, SEO is not relevant, and the page doesn’t need to be pre-rendered. 
+            The data is frequently updated, which requires request-time data fetching.
+          </li>
+        </ul>
+      `
+    },
+    {
+      id: 3,
+      question: "When to Use Static Generation v.s. Server-side Rendering?",
+      answer: `
+        <p>We recommend using <a rel="noopener noreferrer" target="_blank" href="https://nextjs.org/docs/basic-features/pages#static-generation-recommended"><strong>Static Generation</strong></a> (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.</p>
+        <p>You can use<span>Static Generation</span> for many types of pages, including:</p>
+        <ul style="list-style: disc; padding-left: 24px;">
+        <li>Marketing pages</li>
+        <li>Blog posts</li>
+        <li>E-commerce product listings</li>
+        <li>Help and documentation</li>
+        </ul>
+        <p>You should ask yourself: "Can I pre-render this page <strong>ahead</strong> of a user's request?" If the answer is yes, then you should choose Static<span>&nbsp;Generation</span>.</p>
+        <p>On the other hand, <span>Static Generation</span> is <strong>not</strong> a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data and the page content changes with every request.</p>
+        <p>In that case, you can use <a rel="noopener noreferrer" target="_blank" href="https://nextjs.org/docs/basic-features/pages#server-side-rendering"><strong>Server-side Rendering</strong></a>. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate frequently updated data.</p>
+      `
+    }
   ],
 };
