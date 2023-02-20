@@ -125,6 +125,34 @@ export const data = {
         <p>On the other hand, <span>Static Generation</span> is <strong>not</strong> a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data and the page content changes with every request.</p>
         <p>In that case, you can use <a rel="noopener noreferrer" target="_blank" href="https://nextjs.org/docs/basic-features/pages#server-side-rendering"><strong>Server-side Rendering</strong></a>. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate frequently updated data.</p>
       `
+    },
+    {
+      id: 4,
+      question: "Local Storage, Section Storage and Cookie?",
+      answer: `
+        <h3 style="font-weight: bold; font-size: 18px;">Local Storage</h3>
+        <ul style="list-style: disc; padding-left: 24px;">
+          <li>Khả năng lưu trữ v&ocirc; thời hạn: C&oacute; nghĩa l&agrave; chỉ bị x&oacute;a bằng JavaScript, hoặc x&oacute;a bộ nhớ tr&igrave;nh duyệt, hoặc x&oacute;a bằng localStorage API.</li>
+          <li>Lưu trữ được 5MB: Local Storage cho ph&eacute;p bạn lưu trữ th&ocirc;ng tin tương đối lớn l&ecirc;n đến 5MB, lưu được lượng th&ocirc;ng tin lớn nhất trong 3 loại.</li>
+          <li>Kh&ocirc;ng gửi th&ocirc;ng tin l&ecirc;n server như Cookie n&ecirc;n bảo mật tốt hơn.</li>
+        </ul>
+        <br/>
+        <h3 style="font-weight: bold; font-size: 18px;">Section Storage</h3>
+        <ul style="list-style: disc; padding-left: 24px;">
+          <li>Lưu tr&ecirc;n Client: Cũng giống như localStorage th&igrave; sessionStorage cũng d&ugrave;ng để lưu trữ dữ liệu tr&ecirc;n tr&igrave;nh duyệt của kh&aacute;ch truy cập (client).</li>
+          <li>Mất dữ liệu khi đ&oacute;ng tab: Dữ liệu của sessionStorage sẽ mất khi bạn đ&oacute;ng tr&igrave;nh duyệt.</li>
+          <li>Dữ liệu kh&ocirc;ng được gửi l&ecirc;n Server</li>
+          <li>Th&ocirc;ng tin lưu trữ nhiều hơn cookie (&iacute;t nhất 5MB)</li>
+        </ul>
+        <br/>
+        <h3 style="font-weight: bold; font-size: 18px;">Cookie</h3>
+        <ul style="list-style: disc; padding-left: 24px;">
+          <li>Th&ocirc;ng tin được gửi l&ecirc;n server: Cookie sẽ được truyền từ server tới browser v&agrave; được lưu trữ tr&ecirc;n m&aacute;y t&iacute;nh của bạn khi bạn truy cập v&agrave;o ứng dụng, mỗi khi người d&ugrave;ng tải ứng dụng, tr&igrave;nh duyệt sẽ gửi cookie để th&ocirc;ng b&aacute;o cho ứng dụng về hoạt động trước đ&oacute; của bạn. V&igrave; vậy đừng bao giờ lưu trữ những th&ocirc;ng tin quan trọng, y&ecirc;u cầu t&iacute;nh bảo mật cao v&agrave;o cookie v&igrave; n&oacute; ho&agrave;n to&agrave;n c&oacute; thể bị sửa đổi v&agrave; đ&aacute;nh cắp, thấp ch&iacute; c&oacute; thể lợi dụng điều n&agrave;y để tấn c&ocirc;ng website của bạn.</li>
+          <li>Cookie chủ yếu l&agrave; để đọc ph&iacute;a m&aacute;y chủ (cũng c&oacute; thể được đọc ở ph&iacute;a m&aacute;y kh&aacute;ch), localStorage v&agrave; sessionStorage chỉ c&oacute; thể được đọc ở ph&iacute;a m&aacute;y kh&aacute;ch.</li>
+          <li>C&oacute; thời gian sống: Mỗi cookie thường c&oacute; khoảng thời gian timeout nhất định do lập tr&igrave;nh vi&ecirc;n x&aacute;c định trước.</li>
+          <li>Lưu trữ: cho ph&eacute;p lưu trữ tối đa 4KB v&agrave; v&agrave;i chục cookie cho một domain.</li>
+        </ul>
+      `
     }
   ],
 };

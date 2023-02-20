@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
-import redLogo from "assets/images/logo-red.svg";
+import redLogo from "assets/images/s-logo-red.png";
 
 const Footer = () => {
   type SocialsType = {

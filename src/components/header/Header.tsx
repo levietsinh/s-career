@@ -99,9 +99,9 @@ const Header = () => {
         >
           <div className={styles["header-logo"]}>
             <img
-              src={require(`assets/images/logo${
-                isScroll > 0 ? "-red" : ""
-              }.svg`)}
+              src={require(`assets/images/s-logo${
+                isScroll > 0 ? "-red" : "-white"
+              }.png`)}
               alt="S Logo"
               onClick={handleGoToHome}
             />
