@@ -36,16 +36,21 @@ export const categoriesList = [
   },
   {
     id: 8,
+    name: "Vue 3",
+    image: "vue3.png",
+  },
+  {
+    id: 9,
     name: "Angular",
     image: "angular.png",
   },
   {
-    id: 9,
+    id: 10,
     name: "NodeJs",
     image: "dotnet.png",
   },
   {
-    id: 10,
+    id: 11,
     name: ".Net",
     image: "dotnet.png",
   }

@@ -8,8 +8,9 @@ import {data as library4} from "data/libraries/javascript";
 import {data as library5} from "data/libraries/typescript";
 import {data as library6} from "data/libraries/reactjs";
 import {data as library7} from "data/libraries/vuejs";
-import {data as library8} from "data/libraries/angular";
-import {data as library9} from "data/libraries/nodejs";
+import {data as library8} from "data/libraries/vue3";
+import {data as library9} from "data/libraries/angular";
+import {data as library10} from "data/libraries/nodejs";
 
 //Styles
 import styles from "./LibraryDetail.module.scss";
@@ -45,7 +46,7 @@ const LibraryDetail = () => {
       case "7": return setData(library7);
       case "8": return setData(library8);
       case "9": return setData(library9);
-      default: return setData(library1);
+      default: return setData(library10);
     }
   };
   const handleToggleQuestion = (id: number) => {
