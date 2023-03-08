@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 // Hooks
 import useDetectMobile from "hooks/DetectMobile";
@@ -14,11 +14,16 @@ const Header = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const isMobile = useDetectMobile();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const pathName = location.pathname;
 
   const handleGoToHome = () => {
     navigate(process.env.PUBLIC_URL);
     setIsShowMenu(false);
   };
+
+
 
   const handleGoToLibraries = () => {
     navigate(`${process.env.PUBLIC_URL}/libraries`);
@@ -100,7 +105,7 @@ const Header = () => {
           <div className={styles["header-logo"]}>
             <img
               src={require(`assets/images/s-logo${
-                isScroll > 0 ? "-red" : "-white"
+                isScroll > 0 ? "" : "-red"
               }.png`)}
               alt="S Logo"
               onClick={handleGoToHome}
@@ -114,7 +119,7 @@ const Header = () => {
                 <img
                   className={styles["header-mode"]}
                   src={require(`assets/images/dark-mode${
-                    isScroll ? "" : "-white"
+                    isScroll ? "" : "-red"
                   }.png`)}
                   alt="Dark Mode"
                 />

@@ -83,7 +83,8 @@ export const data = {
     },
     {
       id: 2,
-      question: "What are Static Generation, Server-side Rendering and Client-side Rendering?",
+      question:
+        "What are Static Generation, Server-side Rendering and Client-side Rendering?",
       answer: `
         <ul style="list-style: dot">
           <li>
@@ -107,7 +108,7 @@ export const data = {
             The data is frequently updated, which requires request-time data fetching.
           </li>
         </ul>
-      `
+      `,
     },
     {
       id: 3,
@@ -124,7 +125,7 @@ export const data = {
         <p>You should ask yourself: "Can I pre-render this page <strong>ahead</strong> of a user's request?" If the answer is yes, then you should choose Static<span>&nbsp;Generation</span>.</p>
         <p>On the other hand, <span>Static Generation</span> is <strong>not</strong> a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data and the page content changes with every request.</p>
         <p>In that case, you can use <a rel="noopener noreferrer" target="_blank" href="https://nextjs.org/docs/basic-features/pages#server-side-rendering"><strong>Server-side Rendering</strong></a>. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate frequently updated data.</p>
-      `
+      `,
     },
     {
       id: 4,
@@ -152,7 +153,14 @@ export const data = {
           <li>C&oacute; thời gian sống: Mỗi cookie thường c&oacute; khoảng thời gian timeout nhất định do lập tr&igrave;nh vi&ecirc;n x&aacute;c định trước.</li>
           <li>Lưu trữ: cho ph&eacute;p lưu trữ tối đa 4KB v&agrave; v&agrave;i chục cookie cho một domain.</li>
         </ul>
-      `
-    }
+      `,
+    },
+    {
+      id: 5,
+      question: "What is BEM?",
+      answer: `
+        BEM - Block Element Modifier
+      `,
+    },
   ],
 };

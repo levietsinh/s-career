@@ -3,19 +3,20 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 12px 10%;
+  padding: 8px 10%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   box-shadow: 0px 15px 10px -15px #111;
-  transition: .6s;
+  transition: 0.6s;
   z-index: 1025;
+  background-color: white;
 
   &-logo {
     cursor: pointer;
     img {
-      width: 64px;
+      width: 48px;
     }
   }
 
@@ -34,9 +35,9 @@
         font-size: 16px;
         cursor: pointer;
         font-weight: bold;
-        color: white;
+        color: $red-bean;
 
-        +li {
+        + li {
           margin-left: 58px;
         }
 
@@ -48,7 +49,7 @@
   }
 
   &-scroll {
-    transition: .6s;
+    transition: 0.6s;
     background-color: white;
 
     nav {
@@ -67,10 +68,10 @@
     top: 0;
     left: 0;
     right: 0;
-    transition: .6s;
+    transition: 0.6s;
     z-index: 1025;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-    
+
     &__top {
       background-color: white;
       display: flex;
@@ -79,21 +80,21 @@
       width: 100%;
       padding: 12px 6%;
     }
-    
+
     &__bottom {
       background-color: white;
       width: 100%;
       z-index: 1024;
-      transition: .6s;
+      transition: 0.6s;
       transform: translateX(-100%);
-      transition: .4s;
+      transition: 0.4s;
       display: flex;
       align-items: center;
       flex-direction: column;
       height: calc(100vh - 61px);
-      &.show{
+      &.show {
         transform: translateX(0%);
-        transition: .4s;
+        transition: 0.4s;
       }
       .logo {
         text-align: center;
@@ -116,7 +117,7 @@
     .menu-trigger,
     .menu-trigger span {
       display: inline-block;
-      transition: all .4s;
+      transition: all 0.4s;
       box-sizing: border-box;
     }
 
@@ -170,14 +171,13 @@
       // right: 0;
       // background-color: white;
 
-
       ul {
         text-align: center;
         li {
           font-size: 32px;
           font-weight: bold;
           cursor: pointer;
-          + li{
+          + li {
             margin-top: 24px;
           }
         }
