@@ -131,6 +131,7 @@ type </span><span class="typ">Person</span><span class="pln"> </span><span class
       question: "What should we use Interfaces or Types?",
       answer:
         `
+        <a style="font-weight: bold; margin-bottom: 12px; display: block;" href="https://wicki.io/posts/2022-01-quick-comparison-interface-vs-type-alias/">Interface vs Type Alias in TypeScript—Quick Comparison</a>
         <p>This question is really tricky, and the answer to it, you might guess, depends on what you&rsquo;re building and what you&rsquo;re working on.</p>
 <p>Interfaces are better when you need to define a new object or method of an object. For example, in React applications, when you need to define the props that a specific component is going to receive, it&rsquo;s ideal to use interface over types:</p>
 <pre class="prettyprinted hljs cs"><span class="kwd"><span class="hljs-keyword">interface</span></span><span class="pln"> </span><span class="typ"><span class="hljs-title font-blue">TodoProps</span></span><span class="pln"> </span><span class="pun">{</span><span class="pln">
