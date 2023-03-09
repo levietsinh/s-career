@@ -5,7 +5,74 @@ export const data = {
     {
       id: 1,
       question: "What are the changes of Vue 3?",
-      answer: `Updating....`
+      answer: `
+      <ol style="list-style: auto; padding: 0 20px;">
+<li>Composition API (Now built-in)</li>
+<li>
+  <p>Multiple root elements (Template syntax )</p>
+  <h3>Vue 3:</h3>
+  <div class="code-space">
+  <p><span class="token tag"><span class="token punctuation">&lt;</span>template<span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &lt;</span>p<span class="token punctuation">&gt;</span></span><span> Count: {{ count }} </span><span class="token tag"><span class="token punctuation">&lt;/</span>p<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &lt;</span>button <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>increment<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span> Increment </span><span class="token tag"><span class="token punctuation">&lt;/</span>button<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &lt;</span>button <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>decrement<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span> Decrement</span><span class="token tag"><span class="token punctuation">&lt;/</span>button<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&lt;/</span>template<span class="token punctuation">&gt;</span></span></p>
+  </div>
+  <h3>Vue 2:</h3>
+  <div class="code-space">
+  <p><span class="token tag"><span class="token punctuation">&lt;</span>template<span class="token punctuation">&gt;</span></span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &lt;</span>div <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>counter<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &lt;</span>p<span class="token punctuation">&gt;</span></span><span> Count: {{ count }} </span><span class="token tag"><span class="token punctuation">&lt;/</span>p<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &lt;</span>button <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>increment<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span> Increment </span><span class="token tag"><span class="token punctuation">&lt;/</span>button<span class="token punctuation">&gt;</span></span></p>
+<p><span></span><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &lt;</span>button <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>decrement<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span> Decrement</span><span class="token tag"><span class="token punctuation">&lt;/</span>button<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &lt;/</span>div<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&lt;/</span>template<span class="token punctuation">&gt;</span></span></p>
+  </div>
+</li>
+<li>
+<h3>Suspense</h3>
+<div class="code-space">
+<p><span> </span><span class="token tag"><span class="token punctuation">&lt;</span>Suspense<span class="token punctuation">&gt;</span></span></p>
+<p><span>&nbsp;&nbsp;</span><span class="token tag"><span class="token punctuation">&lt;</span>template <span class="token attr-name">#default</span><span class="token punctuation">&gt;</span></span></p>
+<p><span>&nbsp; &nbsp; </span><span class="token tag"><span class="token punctuation">&lt;</span>div <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item in articleList<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item.id<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &nbsp; &lt;</span>article<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span>h2<span class="token punctuation">&gt;</span></span><span>{{ item.title }}</span><span class="token tag"><span class="token punctuation">&lt;/</span>h2<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;</span>p<span class="token punctuation">&gt;</span></span><span>{{ item.body }}</span><span class="token tag"><span class="token punctuation">&lt;/</span>p<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &nbsp; &lt;/</span>article<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &lt;/</span>div<span class="token punctuation">&gt;</span></span><span> </span><span class="token tag"><span class="token punctuation">&lt;/</span>template<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &lt;</span>template <span class="token attr-name">#fallback</span><span class="token punctuation">&gt;</span></span><span> Articles loading... </span><span class="token tag"><span class="token punctuation">&lt;/</span>template<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&lt;/</span>Suspense<span class="token punctuation">&gt;</span></span></p>
+</div>
+</li>
+<li>Multiple V-models
+  <div class="code-space">
+  <p><span class="token tag"><span class="token punctuation">&lt;</span>template<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &lt;</span>survey-form <span class="token attr-name"><span class="token namespace">v-model:</span>name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token namespace">v-model:</span>age</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>age<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span> </span><span class="token tag"><span class="token punctuation">&lt;/</span>survey-form<span class="token punctuation">&gt;</span></span></p>
+<p><span> </span><span class="token tag"><span class="token punctuation">&lt;/</span>template<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation"></span></span></p>
+<p><span>//SurveyForm.vue</span></p>
+<p><span class="token tag"><span class="token punctuation">&lt;</span>template<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp;&lt;</span>div<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &nbsp; &lt;</span>label<span class="token punctuation">&gt;</span></span><span>Name: </span><span class="token tag"><span class="token punctuation">&lt;/</span>label<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &nbsp; &lt;</span>input <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span> <span class="token attr-name">@input</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>updateName($event.target.value)<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span class="token tag"><span class="token punctuation">&lt;</span>label<span class="token punctuation">&gt;</span></span><span>Age: </span><span class="token tag"><span class="token punctuation">&lt;/</span>label<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp; &lt;</span>input <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>age<span class="token punctuation">"</span></span> <span class="token attr-name">@input</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>updateAge($event.target.value)<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&nbsp; &nbsp;&lt;/</span>div<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&lt;/</span>template<span class="token punctuation">&gt;</span></span><span> </span></p>
+<p><span class="token tag"><span class="token punctuation">&lt;</span>script<span class="token punctuation">&gt;</span></span></p>
+<p><span class="token script"><span class="token language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span> </span></span></p>
+<p><span class="token script"><span class="token language-javascript">&nbsp; props<span class="token operator">:</span> <span class="token punctuation">{</span> name<span class="token operator">:</span> String<span class="token punctuation">,</span> age<span class="token operator">:</span> Number <span class="token punctuation">}</span><span class="token punctuation">,</span> </span></span></p>
+<p><span class="token script"><span class="token language-javascript"><span class="token function">&nbsp; setup</span><span class="token punctuation">(</span><span class="token parameter">props<span class="token punctuation">,</span> <span class="token punctuation">{</span> emit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span></span></p>
+<p><span class="token script"><span class="token language-javascript"><span class="token keyword">&nbsp; &nbsp; const</span> <span class="token function-variable function">updateName</span> <span class="token operator">=</span> <span class="token parameter">value</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'update:name'</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span> <span class="token punctuation">}</span> </span></span></p>
+<p><span class="token script"><span class="token language-javascript"><span class="token keyword">&nbsp; &nbsp; const</span> <span class="token function-variable function">updateAge</span> <span class="token operator">=</span> <span class="token parameter">value</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'update:age'</span><span class="token punctuation">,</span> <span class="token operator">+</span>value<span class="token punctuation">)</span> <span class="token punctuation">}</span> </span></span></p>
+<p><span class="token script"><span class="token language-javascript"><span class="token keyword">&nbsp; &nbsp; return</span> <span class="token punctuation">{</span> updateName<span class="token punctuation">,</span> updateAge <span class="token punctuation">}</span> </span></span></p>
+<p><span class="token script"><span class="token language-javascript"><span class="token punctuation">&nbsp; }</span> </span></span></p>
+<p><span class="token script"><span class="token language-javascript"><span class="token punctuation">}</span> </span></span></p>
+<p><span class="token tag"><span class="token punctuation">&lt;/</span>script<span class="token punctuation">&gt;</span></span></p>
+  </div>
+</li>
+<li>Better Reactivity</li>
+</ol>
+      `
     },
     {
       id: 2,

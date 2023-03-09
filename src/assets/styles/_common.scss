@@ -29,19 +29,19 @@ body {
   background-color: #ededed !important;
   font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace!important;
   
-  .hljs-string {
+  .hljs-string, .tag {
     color: #008;
   }
-  .kwd {
-    color: #4271ae;
-  }
-  .pln {
-    color: #718c00;
-  }
-  .typ {
+  .typ, .script {
     color: #bd4147;
   }
-  .pun, .hljs-params {
+  .kwd, .parameter {
+    color: #4271ae;
+  }
+  .pln, .attr-name, .keyword {
+    color: #718c00;
+  }
+  .pun, .hljs-params, .punctuation, .string, .operator {
     color: #212529;
   }
 }
