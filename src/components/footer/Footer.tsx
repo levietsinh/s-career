@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
-import redLogo from "assets/images/s-logo-red.png";
+import redLogo from "assets/images/logo-red.svg";
 
 const Footer = () => {
   type SocialsType = {
@@ -30,17 +30,19 @@ const Footer = () => {
       <div className={styles["footer-main"]}>
         <div className={styles["footer-info"]}>
           <img src={redLogo} alt="Red Logo" />
-          <p className={styles["footer-name"]}>Le Viet Sinh - Web Developer</p>
-          <p className={styles["footer-address"]}>
+          {/* <p className={styles["footer-name"]}>Le Viet Sinh - Web Developer</p> */}
+          {/* <p className={styles["footer-address"]}>
             63 Tran Khanh Du, My An, Ngu Hanh Son, Danang, Vietnam
-          </p>
+          </p> */}
         </div>
         <div className={styles["footer-contact"]}>
           <h3>Contact</h3>
           <p>Phone: +84 357 2 3333 4</p>
           <p>Email: levietsinh201194@gmail.com</p>
+          <p>Address: 63 Tran Khanh Du Street, My An Ward, Ngu Hanh Son Distict, Danang city, Vietnam.</p>
         </div>
         <div className={styles["footer-social"]}>
+          <h3>Social Media</h3>
           {
             socials.map((item: SocialsType) => (
               <a href={item.link} target="_blank" key={item.image}>

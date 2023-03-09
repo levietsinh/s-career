@@ -12,7 +12,7 @@
   }
 
   .category {
-    background-color: $red-bean;
+    background-color: $red-coral;
     width: 90% !important;
     margin: auto;
     height: 160px;
@@ -32,7 +32,11 @@
       border: 10px solid white;
       border-radius: 50%;
       margin-bottom: 12px;
-
+      transition: 0.6s;
+      -webkit-transition: 0.6s;
+      -moz-transition: 0.6s;
+      -ms-transition: 0.6s;
+      -o-transition: 0.6s;
       img {
         width: 100%;
         height: 100%;
@@ -41,12 +45,28 @@
           @include animation-wheel;
         }
       }
+      span {
+        transition: 0.6s;
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -ms-transition: 0.6s;
+        -o-transition: 0.6s;
+      }
     }
 
     &:hover {
       background-color: white;
       border: 2px solid $red-coral;
       transition: 0.6s;
+
+      .category-icon {
+        border-width: 0;
+        transition: 0.6s;
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -ms-transition: 0.6s;
+        -o-transition: 0.6s;
+      }
 
       span {
         color: $red-bean;
@@ -78,7 +98,6 @@
     margin: auto;
 
     :global(.slick-arrow) {
-
       &:global(.slick-prev:before),
       &:global(.slick-next:before) {
         color: #000;
@@ -119,17 +138,16 @@
       margin: auto;
 
       :global(.slick-arrow) {
-  
         &:global(.slick-prev:before),
         &:global(.slick-next:before) {
           font-size: 32px;
         }
-  
+
         &:global(.slick-prev) {
           left: -32px;
           top: 50%;
         }
-  
+
         &:global(.slick-next) {
           right: -20px;
           top: 50%;

@@ -32,7 +32,7 @@
     max-width: 1224px;
     height: 80vh;
     max-height: 366px;
-    background-color: rgba($color: $red-light, $alpha: 0.5);
+    background-color: rgba($color: $red-light, $alpha: 0.2);
     border: 2px solid white;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
@@ -92,7 +92,7 @@
       margin-bottom: 20px;
       line-height: 1.2;
       span {
-        color: $red-misty;
+        color: $red-bean;
       }
     }
     p {
