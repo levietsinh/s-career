@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/s-career/static/css/main.1c8357fa.css",
-    "main.js": "/s-career/static/js/main.0b830ada.js",
+    "main.css": "/s-career/static/css/main.4fd57dfa.css",
+    "main.js": "/s-career/static/js/main.6c9a00fb.js",
+    "static/media/s-logo-red.png": "/s-career/static/media/s-logo-red.04d499825e77f40a5715.png",
     "static/media/logo-red-mobile.png": "/s-career/static/media/logo-red-mobile.d89db89e6dcfbb3f589a.png",
     "static/media/logo-black.png": "/s-career/static/media/logo-black.763e86f450b52e1908ea.png",
     "static/media/logo-mobile.png": "/s-career/static/media/logo-mobile.c8f18987e9fe80fb95c2.png",
     "static/media/angular.png": "/s-career/static/media/angular.6ef35a2c031051ea3ce4.png",
+    "static/media/s-logo.png": "/s-career/static/media/s-logo.732bad5035f0a630c5ca.png",
+    "static/media/s-logo-white.png": "/s-career/static/media/s-logo-white.cc6471aa065d315b14e7.png",
     "static/media/Roboto-Regular.ttf": "/s-career/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Roboto-Black.ttf": "/s-career/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
     "static/media/Roboto-Bold.ttf": "/s-career/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
     "static/media/dotnet.png": "/s-career/static/media/dotnet.a10a4f42b4a18f594def.png",
     "static/media/zalo.png": "/s-career/static/media/zalo.f6d76a31244afadfef14.png",
+    "static/media/vue3.png": "/s-career/static/media/vue3.ae782c06e28f3199cf84.png",
     "static/media/web.png": "/s-career/static/media/web.56523548c5833c07cec7.png",
+    "static/media/vue3.jpg": "/s-career/static/media/vue3.4e27190bb7cf20546e60.jpg",
     "static/media/css.png": "/s-career/static/media/css.a327b6ba3be7d6e4fe57.png",
     "static/media/html.png": "/s-career/static/media/html.c1ef11e910005d746d34.png",
     "static/media/reactjs.png": "/s-career/static/media/reactjs.283bf42c605cfc49cf49.png",
@@ -26,11 +31,11 @@
     "static/media/slick.ttf": "/s-career/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/s-career/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/s-career/index.html",
-    "main.1c8357fa.css.map": "/s-career/static/css/main.1c8357fa.css.map",
-    "main.0b830ada.js.map": "/s-career/static/js/main.0b830ada.js.map"
+    "main.4fd57dfa.css.map": "/s-career/static/css/main.4fd57dfa.css.map",
+    "main.6c9a00fb.js.map": "/s-career/static/js/main.6c9a00fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c8357fa.css",
-    "static/js/main.0b830ada.js"
+    "static/css/main.4fd57dfa.css",
+    "static/js/main.6c9a00fb.js"
   ]
 }
