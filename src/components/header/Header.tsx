@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <>
       {isMobile ? (
-        <header className={styles["header-mobile"]}>
+        <header className={styles["header-mobile"]} style={{height: isShowMenu ? '' : 0}}>
           <div className={styles["header-mobile__top"]}>
             <div
               className={styles["header-mobile__logo"]}
