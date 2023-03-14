@@ -162,5 +162,19 @@ export const data = {
         BEM - Block Element Modifier
       `,
     },
+    {
+      id: 6,
+      question: "What is CORS?",
+      answer: `
+      Cors ( Cross-Origin Resource Sharing) là một cơ chế trình duyệt cho phép truy cập và kiểm soát các tài nguyên nằm bên ngoài một miền nhất định nào đó. Nó sẽ mở rộng và thêm sự linh hoạt cho chính sách cùng nguồn gốc.
+      `,
+    },
+    {
+      id: 6,
+      question: "What is Cross-Site Scripting (XSS)?",
+      answer: `
+      Cross-Site Scripting (XSS) là một hình thức tấn công bằng mã độc phổ biến. Các hacker sẽ lợi dụng lỗ hổng trong bảo mật web để chèn các mã script, sau đó gửi cho người dùng để truy cập và mạo danh người dùng.      `,
+    },
+    
   ],
 };
