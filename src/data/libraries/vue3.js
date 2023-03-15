@@ -3,7 +3,6 @@ export const data = {
   references: [],
   library: [
     {
-      id: 1,
       question: "What are the changes of Vue 3?",
       answer: `
       <ol style="list-style: auto; padding: 0 20px;">
@@ -75,7 +74,6 @@ export const data = {
       `
     },
     {
-      id: 2,
       question: "Compare ref() and reactive()?",
       answer: `<a href="https://dmitripavlutin.com/ref-reactive-differences-vue/" target="_blank">5 Must-Know Differences Between ref() and reactive() in Vue</a>
         <ul>
@@ -100,7 +98,6 @@ export const data = {
 
     },
     {
-      id: 3,
       question: "When we should use ref() or reactive()?",
       answer:
       `
@@ -113,17 +110,14 @@ export const data = {
       `
     },
     {
-      id: 4,
       question: "What is the question?",
       answer: "Updating..."
     },
     {
-      id: 5,
       question: "What is the question?",
       answer: "Updating..."
     },
     {
-      id: 6,
       question: "What is the question?",
       answer: "Updating..."
     },

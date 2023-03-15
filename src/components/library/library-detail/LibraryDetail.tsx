@@ -17,12 +17,10 @@ import styles from "./LibraryDetail.module.scss";
 import { useParams } from "react-router-dom";
 
 interface IReference {
-  id: number,
   name: string,
   link: string,
 }
 interface ILibrary {
-  id: number,
   question: string,
   answer: string,
 }
@@ -38,6 +36,7 @@ const LibraryDetail = () => {
 
   const handleGetData = () => {
     switch(libraryId) {
+      case "1": return setData(library1);
       case "2": return setData(library2);
       case "3": return setData(library3);
       case "4": return setData(library4);
@@ -67,34 +66,34 @@ const LibraryDetail = () => {
       <div className={styles["library-container"]}>
         <ul className={styles["library-detail__list"]}>
           {
-            data.library.length ? data.library.map((item: ILibrary) => (
-              <li key={item.id} id={`question-${item.id}`} className={styles["library-detail__item"]}>
+            data.library.length ? data.library.map((item: ILibrary, index) => (
+              <li key={index} id={`question-${index}`} className={styles["library-detail__item"]}>
               <div className={styles["question"]}>
                 {item.question}
                 <span
                   className={styles["question-open"]}
-                  onClick={() => handleToggleQuestion(item.id)}
+                  onClick={() => handleToggleQuestion(index)}
                 >
                   +
                 </span>
                 <span
                   className={styles["question-close"]}
-                  onClick={() => handleToggleQuestion(item.id)}
+                  onClick={() => handleToggleQuestion(index)}
                 >
                   -
                 </span>
               </div>
               <div className={styles["answer"]} dangerouslySetInnerHTML={{__html: item.answer}}/>            
             </li>
-            )) : "No question"
+            )) : "No question."
           }
         </ul>
         <div className={styles["references"]}>
           <h3>References</h3>
           {
             data.references?.length ? 
-            data.references?.map((item: IReference) => (
-              <a className={styles["hyperlink"]} href={item.link} target="_blank" rel="noreferrer" key={item.id}>{item.name}</a>
+            data.references?.map((item: IReference, index) => (
+              <a className={styles["hyperlink"]} href={item.link} target="_blank" rel="noreferrer" key={index}>{item.name}</a>
             )) : "No reference."
           }
         </div>

@@ -3,7 +3,6 @@ export const data = {
   references: [],
   library: [
     {
-      id: 1,
       question: "HTTP Status Code?",
       answer: `<ul>
           <li>
@@ -82,7 +81,6 @@ export const data = {
         `,
     },
     {
-      id: 2,
       question:
         "What are Static Generation, Server-side Rendering and Client-side Rendering?",
       answer: `
@@ -111,7 +109,6 @@ export const data = {
       `,
     },
     {
-      id: 3,
       question: "When to Use Static Generation v.s. Server-side Rendering?",
       answer: `
         <p>We recommend using <a rel="noopener noreferrer" target="_blank" href="https://nextjs.org/docs/basic-features/pages#static-generation-recommended"><strong>Static Generation</strong></a> (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.</p>
@@ -128,7 +125,6 @@ export const data = {
       `,
     },
     {
-      id: 4,
       question: "Local Storage, Section Storage and Cookie?",
       answer: `
         <h3 style="font-weight: bold; font-size: 18px;">Local Storage</h3>
@@ -156,25 +152,21 @@ export const data = {
       `,
     },
     {
-      id: 5,
       question: "What is BEM?",
       answer: `
         BEM - Block Element Modifier
       `,
     },
     {
-      id: 6,
       question: "What is CORS?",
       answer: `
       Cors ( Cross-Origin Resource Sharing) là một cơ chế trình duyệt cho phép truy cập và kiểm soát các tài nguyên nằm bên ngoài một miền nhất định nào đó. Nó sẽ mở rộng và thêm sự linh hoạt cho chính sách cùng nguồn gốc.
       `,
     },
     {
-      id: 6,
       question: "What is Cross-Site Scripting (XSS)?",
       answer: `
       Cross-Site Scripting (XSS) là một hình thức tấn công bằng mã độc phổ biến. Các hacker sẽ lợi dụng lỗ hổng trong bảo mật web để chèn các mã script, sau đó gửi cho người dùng để truy cập và mạo danh người dùng.      `,
     },
-    
   ],
 };

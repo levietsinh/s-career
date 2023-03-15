@@ -2,14 +2,12 @@ export const data = {
   name: "Javascript",
   references: [
     {
-      id: 1,
       name: "Github - JS Interview Questions & Answers",
       link: "https://github.com/sudheerj/javascript-interview-questions",
     },
   ],
   library: [
     {
-      id: 1,
       question: "What are the array detection mutation methods?",
       answer: `
       <p dir="auto">As the name suggests, mutation methods modifies the original array.</p>
@@ -28,7 +26,6 @@ export const data = {
 `,
     },
     {
-      id: 2,
       question: "What are the array detection non-mutation methods?",
       answer: `
       <p dir="auto">The methods which do not mutate the original array but always return a new array are called non-mutation methods.</p>
@@ -48,7 +45,6 @@ export const data = {
       `
     },
     {
-      id: 3,
       question: "What are the new features in Javascript ES6 (ECMAScript 2015)?",
       answer:
       `
@@ -155,17 +151,27 @@ console.log(num); // 50</code></pre>
       `
     },
     {
-      id: 4,
+      question: "Các giá trị Falsy trong Javascript là gì?",
+      answer: 
+      `
+        <div>Là các giá trị khi chuyển đổi thành Boolean thì sẽ return về <strong>FALSE</strong></div>
+        <div class="code-space">
+          <p>''</p>
+          <p>0</p>
+          <p>null</p>
+          <p>undefined</p>
+          <p>NaN</p>
+          <p>false</p>
+          <p>-0</p>
+          <p>0n // BigInt, when used as a boolean, follows the same rule as a Number</p>
+        </div>
+      `
+    },
+    {
       question: "What is the question?",
       answer: "Updating..."
     },
     {
-      id: 5,
-      question: "What is the question?",
-      answer: "Updating..."
-    },
-    {
-      id: 6,
       question: "What is the question?",
       answer: "Updating..."
     },

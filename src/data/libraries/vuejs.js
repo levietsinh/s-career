@@ -2,14 +2,12 @@ export const data = {
   name: "VueJs",
   references: [
     {
-      id: 1,
       name: "Github - VueJs Interview Questions & Answers",
       link: "https://github.com/sudheerj/vuejs-interview-questions",
     },
   ],
   library: [
     {
-      id: 1,
       question: "What are the caveats of array changes detection?",
       answer: `
       <ul class="content">
@@ -45,7 +43,6 @@ export const data = {
       `
     },
     {
-      id: 2,
       question: "What are the caveats of object changes detection?",
       answer: `
       <ul class="content">
@@ -89,7 +86,6 @@ vm.user.email = john@email.com // &#96;vm.user.email&#96; is NOT reactive" role=
       `
     },
     {
-      id: 3,
       question: "What are the supported System Modifier Keys?",
       answer: `
       <ul class="content">
@@ -111,7 +107,6 @@ vm.user.email = john@email.com // &#96;vm.user.email&#96; is NOT reactive" role=
       `
     },
     {
-      id: 4,
       question: "What are the supported Mouse Button Modifiers?",
       answer: `
       <ul class="content">
@@ -135,7 +130,6 @@ vm.user.email = john@email.com // &#96;vm.user.email&#96; is NOT reactive" role=
       `
     },
     {
-      id: 5,
       question: "What's your name?",
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio et deserunt dolores quisquam, tempore culpa dicta natus blanditiis labore recusandae vitae, repellat vero. Nulla veritatis eligendi non ab. Vel?",

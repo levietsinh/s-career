@@ -2,14 +2,12 @@ export const data = {
   name: "TypeScript",
   references: [
     {
-      id: 1,
       name: "Github - JS Interview Questions & Answers",
       link: "https://github.com/sudheerj/javascript-interview-questions",
     },
   ],
   library: [
     {
-      id: 1,
       question: "Types vs Interfaces?",
       answer: `
         <div style="padding: 0 12px; font-size: 14px;">
@@ -127,7 +125,6 @@ type </span><span class="typ">Person</span><span class="pln"> </span><span class
       `,
     },
     {
-      id: 2,
       question: "What should we use Interfaces or Types?",
       answer:
         `
@@ -162,23 +159,19 @@ type </span><span class="typ">ReturnPerson</span><span class="pln"> </span><span
         `
     },
     {
-      id: 3,
       question: "What's your name?",
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam odio et deserunt dolores quisquam, tempore culpa dicta natus blanditiis labore recusandae vitae, repellat vero. Nulla veritatis eligendi non ab. Vel?",
     },
     {
-      id: 4,
       question: "What is the question?",
       answer: "Updating..."
     },
     {
-      id: 5,
       question: "What is the question?",
       answer: "Updating..."
     },
     {
-      id: 6,
       question: "What is the question?",
       answer: "Updating..."
     },
