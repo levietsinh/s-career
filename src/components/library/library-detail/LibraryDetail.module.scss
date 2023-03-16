@@ -1,5 +1,4 @@
 @import "assets/styles/common.scss";
-
 .library-detail {
   padding: 20vh 10vw 48px 10vw;
   position: relative;
@@ -54,6 +53,7 @@
   }
   &__list {
     width: 70%;
+    list-style: none;
   }
   &__item {
     + li {
@@ -124,7 +124,7 @@
 
 @media screen and (max-width: 767px) {
   .library-detail {
-    padding: 12vh 8vw 40px 8vw;
+    padding: 12vh 4vw 40px 4vw;
     h2 {
       text-align: center;
       font-weight: bold;

@@ -47,7 +47,7 @@ export const categoriesList = [
   {
     id: 10,
     name: "NodeJs",
-    image: "dotnet.png",
+    image: "nodejs.png",
   },
   {
     id: 11,

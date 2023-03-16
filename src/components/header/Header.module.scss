@@ -28,6 +28,7 @@
 
     ul {
       display: flex;
+      list-style: none;
 
       li {
         display: flex;
@@ -169,14 +170,9 @@
     }
 
     &__nav {
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // right: 0;
-      // background-color: white;
-
       ul {
         text-align: center;
+        list-style: none;
         li {
           font-size: 32px;
           font-weight: bold;

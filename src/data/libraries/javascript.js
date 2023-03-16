@@ -5,6 +5,10 @@ export const data = {
       name: "Github - JS Interview Questions & Answers",
       link: "https://github.com/sudheerj/javascript-interview-questions",
     },
+    {
+      name: "Những bài toán Logic (Phần 1)",
+      link: "https://codelearn.io/sharing/30-cau-phong-van-javascript-phan-1",
+    },
   ],
   library: [
     {
@@ -168,8 +172,33 @@ console.log(num); // 50</code></pre>
       `
     },
     {
-      question: "What is the question?",
-      answer: "Updating..."
+      question: "What are the available methods in Javascript?",
+      answer: `
+      <ul>
+        <li>anchor () &ndash; Tạo một anchor HTML để được sử dụng l&agrave;m mục ti&ecirc;u si&ecirc;u văn bản</li>
+        <li>ceil () &ndash; trả về số nguy&ecirc;n nhỏ nhất lớn hơn hoặc bằng số đ&atilde; cho</li>
+        <li>concat () &ndash; Kết hợp hai chuỗi v&agrave; trả về chuỗi mới hơn</li>
+        <li>constructor () &ndash; Trả về h&agrave;m đ&atilde; tạo phi&ecirc;n bản tương ứng của đối tượng</li>
+        <li>Date () &ndash; Trả về ng&agrave;y v&agrave; giờ hiện tại</li>
+        <li>Date.parse () &ndash; Ph&acirc;n t&iacute;ch c&uacute; ph&aacute;p biểu diễn chuỗi của ng&agrave;y v&agrave; giờ, sau đ&oacute; trả về biểu diễn mili gi&acirc;y b&ecirc;n trong cho c&ugrave;ng một</li>
+        <li>execute () &ndash; T&igrave;m kiếm kết quả ph&ugrave; hợp trong tham số chuỗi</li>
+        <li>filter () &ndash; Tạo một mảng mới với tất cả c&aacute;c phần tử của mảng m&agrave; h&agrave;m lọc trả về true</li>
+        <li>font color () &ndash; Hiển thị một chuỗi theo m&agrave;u được chỉ định</li>
+        <li>link () &ndash; Tạo một li&ecirc;n kết si&ecirc;u văn bản HTML y&ecirc;u cầu một URL kh&aacute;c</li>
+        <li>localeCompare () &ndash; Trả về một số cho biết một chuỗi tham chiếu đến trước, sau hay giống với chuỗi đ&atilde; cho theo thứ tự sắp xếp</li>
+        <li>match () &ndash; Được sử dụng để so khớp một biểu thức ch&iacute;nh quy với một chuỗi</li>
+        <li>pop () &ndash; Loại bỏ v&agrave; trả về phần tử cuối c&ugrave;ng từ một mảng</li>
+        <li>reduce() &ndash; &Aacute;p dụng đồng thời một h&agrave;m cho hai gi&aacute; trị của mảng để giảm ch&uacute;ng xuống một gi&aacute; trị duy nhất</li>
+        <li>round () &ndash; L&agrave;m tr&ograve;n gi&aacute; trị của số đ&atilde; cho th&agrave;nh số nguy&ecirc;n gần nhất v&agrave; trả về gi&aacute; trị tương tự</li>
+        <li>Slice () &ndash; Tr&iacute;ch xuất một phần nhất định của một chuỗi v&agrave; trả về chuỗi c&ograve;n lại</li>
+        <li>some () &ndash; trả về true nếu &iacute;t nhất một phần tử của mảng thỏa m&atilde;n h&agrave;m kiểm tra được cung cấp</li>
+        <li>toLocaleString () &ndash; Trả về gi&aacute; trị chuỗi của số hiện tại ở định dạng phụ thuộc v&agrave;o c&agrave;i đặt ng&ocirc;n ngữ của tr&igrave;nh duyệt</li>
+        <li>sup () &ndash; Hiển thị một chuỗi dưới dạng chỉ số tr&ecirc;n</li>
+        <li>toSource () &ndash; Trả về một chuỗi chứa nguồn của đối tượng Boolean</li>
+        <li>toUpperCase () &ndash; Chuyển văn bản th&agrave;nh chữ hoa</li>
+        <li>valueOf () &ndash; Trả về gi&aacute; trị ban đầu của đối tượng được chỉ định</li>
+      </ul>
+      `
     },
     {
       question: "What is the question?",

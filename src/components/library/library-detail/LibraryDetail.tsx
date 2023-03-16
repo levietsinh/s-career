@@ -69,7 +69,7 @@ const LibraryDetail = () => {
             data.library.length ? data.library.map((item: ILibrary, index) => (
               <li key={index} id={`question-${index}`} className={styles["library-detail__item"]}>
               <div className={styles["question"]}>
-                {item.question}
+                <div style={{flex: 1, marginRight: 4}}>{item.question}</div>
                 <span
                   className={styles["question-open"]}
                   onClick={() => handleToggleQuestion(index)}

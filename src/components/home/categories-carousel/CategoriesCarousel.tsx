@@ -52,16 +52,20 @@ const Categories = () => {
       }
     ]
   };
-  const handleClick = () => {
+  const handleSeeMore = () => {
     navigate(`${process.env.PUBLIC_URL}/libraries`)
+  }
+
+  const handleGotoDetails = (id: number) => {
+    navigate(`${process.env.PUBLIC_URL}/libraries/${id}`)
   }
 
   return (
     <div className={styles["categories"]}>
       <h2>Libraries</h2>
       <Slider {...settings}>
-        {categoriesList.slice(0, 6).map((item: ICategory) => (
-          <div key={item.name} className={styles["category"]}>
+        {categoriesList.slice(0, 6).map((item: ICategory, index) => (
+          <div key={item.name} className={styles["category"]} onClick={() =>handleGotoDetails(index + 1)}>
             <div className={styles["category-icon"]}>
               <img
                 className={item.name === "ReactJs" ? styles["rotate"] : ""}
@@ -74,7 +78,7 @@ const Categories = () => {
         ))}
       </Slider>
       <div className={styles["categories__button"]}>
-        <SButton name="See more..." onClick={handleClick}/>
+        <SButton name="See more..." onClick={handleSeeMore}/>
       </div>
     </div>
   );
