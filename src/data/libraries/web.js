@@ -168,5 +168,21 @@ export const data = {
       answer: `
       Cross-Site Scripting (XSS) là một hình thức tấn công bằng mã độc phổ biến. Các hacker sẽ lợi dụng lỗ hổng trong bảo mật web để chèn các mã script, sau đó gửi cho người dùng để truy cập và mạo danh người dùng.      `,
     },
+    {
+      question: "What is the OAuth2?",
+      answer: `<a href="https://viblo.asia/p/tim-hieu-doi-chut-ve-oauth2-eW65GvMLlDO" target="_blank">Tìm hiểu đôi chút về OAuth2</a>`
+    },
+    {
+      question: "What is the JWT?",
+      answer: "",
+    },
+    {
+      question: "Why do we need Refresh Token?",
+      answer: "",
+    },
+    {
+      question: "Tại sao Access Token nhanh hết hạn?",
+      answer: "",
+    },
   ],
 };
