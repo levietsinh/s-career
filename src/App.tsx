@@ -25,7 +25,7 @@ function App() {
         <Route path={`${process.env.PUBLIC_URL}/projects`} element={<ProjectsView/>}/>
         <Route path={`${process.env.PUBLIC_URL}/libraries`} element={<LibrariesView/>}/>
         <Route path={`${process.env.PUBLIC_URL}/libraries/:libraryId`} element={<LibraryDetailView/>}/>
-        <Route element={<ErrorView/>}/>
+        <Route path="*" element={<ErrorView/>}/>
       </Routes>
       <Footer />
     </div>

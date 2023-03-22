@@ -1,0 +1,12 @@
+@import "assets/styles/common.scss";
+
+.error {
+  margin-top: 73px;
+  text-align: center;
+  &__status {
+    font-size: 80px;
+    font-weight: bold;
+    color: $red-bean;
+    margin-bottom: 40px;
+  }
+}
