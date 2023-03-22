@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // Hooks
 import useDetectMobile from "hooks/DetectMobile";
@@ -14,21 +14,11 @@ const Header = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
   const isMobile = useDetectMobile();
   const navigate = useNavigate();
-  const location = useLocation();
 
-  const pathName = location.pathname;
-
-  const handleGoToHome = () => {
-    navigate(process.env.PUBLIC_URL);
+  const handleNavigate = (path: string) => {
+    navigate(process.env.PUBLIC_URL + path);
     setIsShowMenu(false);
-  };
-
-
-
-  const handleGoToLibraries = () => {
-    navigate(`${process.env.PUBLIC_URL}/libraries`);
-    setIsShowMenu(false);
-  };
+  }
 
   useEffect(() => {
     const onScroll = () => setIsScroll(window.pageYOffset);
@@ -49,7 +39,7 @@ const Header = () => {
           <div className={styles["header-mobile__top"]}>
             <div
               className={styles["header-mobile__logo"]}
-              onClick={handleGoToHome}
+              onClick={() => handleNavigate("")}
             >
               <img
                 src={require("assets/images/logo-mobile.png")}
@@ -62,6 +52,8 @@ const Header = () => {
                 isShowMenu ? styles["active"] : ""
               )}
               onClick={() => setIsShowMenu(!isShowMenu)}
+              title="Hamburger"
+              type="button"
             >
               <span></span>
               <span></span>
@@ -82,8 +74,9 @@ const Header = () => {
             </div>
             <nav className={clsx(styles["header-mobile__nav"])}>
               <ul>
-                <li onClick={handleGoToHome}>Home</li>
-                <li onClick={handleGoToLibraries}>Libraries</li>
+                <li onClick={() => handleNavigate("")}>Home</li>
+                <li onClick={() => handleNavigate("/libraries")}>Libraries</li>
+                <li onClick={() => handleNavigate("/projects")}>Projects</li>
                 <li>
                   <img
                     className={styles["header-mode"]}
@@ -108,13 +101,14 @@ const Header = () => {
                 isScroll > 0 ? "" : "-red"
               }.png`)}
               alt="S Logo"
-              onClick={handleGoToHome}
+              onClick={() => handleNavigate("")}
             />
           </div>
           <nav>
             <ul>
-              <li onClick={handleGoToHome}>Home</li>
-              <li onClick={handleGoToLibraries}>Libraries</li>
+              <li onClick={() => handleNavigate("")}>Home</li>
+              <li onClick={() => handleNavigate("/libraries")}>Libraries</li>
+              <li onClick={() => handleNavigate("/projects")}>Projects</li>
               <li>
                 <img
                   className={styles["header-mode"]}

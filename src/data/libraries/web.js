@@ -174,7 +174,10 @@ export const data = {
     },
     {
       question: "What is the JWT?",
-      answer: "",
+      answer: `
+      <a href="https://viblo.asia/p/json-web-token-la-gi-aWj533go56m">JSON Web Token là gì?</a>
+        <p>JWT (JSON Web Tokens) là một chuỗi mã hoá hay một tiêu chuẩn mở RFC 7519 được sử dụng như một phương tiện đại diện nhỏ gọn có khả năng thông qua chuỗi JSON để truyền đạt thông tin giữa server và client</p>
+      `,
     },
     {
       question: "Why do we need Refresh Token?",
@@ -184,5 +187,9 @@ export const data = {
       question: "Tại sao Access Token nhanh hết hạn?",
       answer: "",
     },
+    {
+      question: "Nên lưu token ở đâu? localStorage, sessionStorage hay Cookies?",
+      answer: ""
+    }
   ],
 };

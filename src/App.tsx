@@ -9,9 +9,11 @@ import "assets/styles/_common.scss";
 // Components
 import Header from "components/header/Header";
 import Footer from "components/footer/Footer";
-import Home from "components/home/Home";
-import Library from "components/library/Library";
-import LibraryDetail from "components/library/library-detail/LibraryDetail";
+import HomeView from "views/HomeView";
+import LibrariesView from "views/LibrariesView";
+import LibraryDetailView from "views/LibraryDetailView";
+import ProjectsView from "views/ProjectsView";
+import ErrorView from "views/ErrorView";
 
 function App() {
   return (
@@ -19,9 +21,11 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path={process.env.PUBLIC_URL} element={<Home/>}/>
-        <Route path={`${process.env.PUBLIC_URL}/libraries`} element={<Library/>}/>
-        <Route path={`${process.env.PUBLIC_URL}/libraries/:libraryId`} element={<LibraryDetail/>}/>
+        <Route path={process.env.PUBLIC_URL} element={<HomeView/>}/>
+        <Route path={`${process.env.PUBLIC_URL}/projects`} element={<ProjectsView/>}/>
+        <Route path={`${process.env.PUBLIC_URL}/libraries`} element={<LibrariesView/>}/>
+        <Route path={`${process.env.PUBLIC_URL}/libraries/:libraryId`} element={<LibraryDetailView/>}/>
+        <Route element={<ErrorView/>}/>
       </Routes>
       <Footer />
     </div>
