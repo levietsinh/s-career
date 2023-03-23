@@ -14,20 +14,21 @@ import LibrariesView from "views/LibrariesView";
 import LibraryDetailView from "views/LibraryDetailView";
 import ProjectsView from "views/ProjectsView";
 import ErrorView from "views/ErrorView";
+import MainLayout from "layout/MainLayOut";
 
 function App() {
   return (
     // <GlobalStyles>
     <div className="App">
-      <Header />
       <Routes>
-        <Route path={process.env.PUBLIC_URL} element={<HomeView/>}/>
-        <Route path={`${process.env.PUBLIC_URL}/projects`} element={<ProjectsView/>}/>
-        <Route path={`${process.env.PUBLIC_URL}/libraries`} element={<LibrariesView/>}/>
-        <Route path={`${process.env.PUBLIC_URL}/libraries/:libraryId`} element={<LibraryDetailView/>}/>
+        <Route element={<MainLayout/>}>
+          <Route path={process.env.PUBLIC_URL} element={<HomeView/>}/>
+          <Route path={`${process.env.PUBLIC_URL}/projects`} element={<ProjectsView/>}/>
+          <Route path={`${process.env.PUBLIC_URL}/libraries`} element={<LibrariesView/>}/>
+          <Route path={`${process.env.PUBLIC_URL}/libraries/:libraryId`} element={<LibraryDetailView/>}/>
+        </Route>
         <Route path="*" element={<ErrorView/>}/>
       </Routes>
-      <Footer />
     </div>
     // </GlobalStyles>
   );

@@ -46,7 +46,7 @@ const Footer = () => {
           {
             socials.map((item: SocialsType) => (
               <a href={item.link} target="_blank" key={item.image}>
-                <img src={require(`assets/images/${item.image}.png`)}/>
+                <img src={require(`assets/images/${item.image}.png`)} alt="Social Media"/>
               </a>
             ))
           }

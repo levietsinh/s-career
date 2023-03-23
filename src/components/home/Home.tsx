@@ -2,21 +2,28 @@ import React from "react";
 import styles from "./Home.module.scss";
 import avatar from "assets/images/s-character.png";
 import CategoriesCarousel from "components/home/categories-carousel/CategoriesCarousel";
+import ReactTypingEffect from "react-typing-effect";
 
 const Home = () => {
   return (
     <>
       <div className={styles["home"]}>
         <div className={styles["home-intro"]} id="id-1">
-            <div className={styles["x-factor"]}/>
-            <div className={styles["o-factor"]}/>
+          <div className={styles["x-factor"]} />
+          <div className={styles["o-factor"]} />
           <div className={styles["home-avatar"]}>
             <img src={avatar} alt="S Character" />
           </div>
           <div className={styles["home-greeting"]}>
-            <h2>
-              I’m <span>Alireza</span> Alireza Kavousy nezjad
-            </h2>
+            <ReactTypingEffect
+              staticText={"I am"}
+              className={styles["writer"]}
+              cursorClassName={styles["writer__cursor"]}
+              speed={300}
+              eraseDelay={200}
+              typingDelay={200}
+              text={["a Front End Developer.", "World!"]}
+            />
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
               nihil quae a nemo repellendus labore, veniam sapiente blanditiis!
@@ -26,7 +33,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <CategoriesCarousel/>
+      <CategoriesCarousel />
     </>
   );
 };

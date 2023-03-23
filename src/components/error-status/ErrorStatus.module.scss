@@ -1,12 +1,18 @@
 @import "assets/styles/common.scss";
 
 .error {
-  margin-top: 73px;
+  padding-top: calc(73px + 10vh);
   text-align: center;
   &__status {
     font-size: 80px;
     font-weight: bold;
     color: $red-bean;
     margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  &__title {
+    font-size: 24px;
+    color: $gray-slate;
+    margin-bottom: 24px;
   }
 }
