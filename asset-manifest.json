@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/s-career/static/css/main.73831f53.css",
-    "main.js": "/s-career/static/js/main.b30441f1.js",
+    "main.css": "/s-career/static/css/main.1050ea8c.css",
+    "main.js": "/s-career/static/js/main.854508fc.js",
     "static/media/s-logo-red.png": "/s-career/static/media/s-logo-red.04d499825e77f40a5715.png",
     "static/media/logo-red-mobile.png": "/s-career/static/media/logo-red-mobile.d89db89e6dcfbb3f589a.png",
     "static/media/logo-black.png": "/s-career/static/media/logo-black.763e86f450b52e1908ea.png",
@@ -12,6 +12,10 @@
     "static/media/Roboto-Regular.ttf": "/s-career/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Roboto-Black.ttf": "/s-career/static/media/Roboto-Black.cf56c1b149d0a5e8d7c6.ttf",
     "static/media/Roboto-Bold.ttf": "/s-career/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/RobotoSlab-Black.ttf": "/s-career/static/media/RobotoSlab-Black.c2790eec6d030895e9fd.ttf",
+    "static/media/RobotoSlab-ExtraBold.ttf": "/s-career/static/media/RobotoSlab-ExtraBold.77ae9be105465181c23e.ttf",
+    "static/media/RobotoSlab-Bold.ttf": "/s-career/static/media/RobotoSlab-Bold.782c0d76a12a08d80d48.ttf",
+    "static/media/RobotoSlab-Regular.ttf": "/s-career/static/media/RobotoSlab-Regular.39c7af8a5d124ff3c247.ttf",
     "static/media/dotnet.png": "/s-career/static/media/dotnet.a10a4f42b4a18f594def.png",
     "static/media/zalo.png": "/s-career/static/media/zalo.f6d76a31244afadfef14.png",
     "static/media/vue3.png": "/s-career/static/media/vue3.ae782c06e28f3199cf84.png",
@@ -31,11 +35,11 @@
     "static/media/slick.ttf": "/s-career/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/s-career/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/s-career/index.html",
-    "main.73831f53.css.map": "/s-career/static/css/main.73831f53.css.map",
-    "main.b30441f1.js.map": "/s-career/static/js/main.b30441f1.js.map"
+    "main.1050ea8c.css.map": "/s-career/static/css/main.1050ea8c.css.map",
+    "main.854508fc.js.map": "/s-career/static/js/main.854508fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.73831f53.css",
-    "static/js/main.b30441f1.js"
+    "static/css/main.1050ea8c.css",
+    "static/js/main.854508fc.js"
   ]
 }
