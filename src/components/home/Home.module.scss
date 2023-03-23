@@ -135,7 +135,7 @@
     -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
   &__cursor {
     color: $red-light;
-    font-size: 44px;
+    font-size: 48px;
   }
 }
 
@@ -301,6 +301,17 @@
   .home {
     &-intro {
       max-height: unset;
+    }
+  }
+  .writer {
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff, 1px 1px #fff,
+      -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    &__cursor {
+      color: $red-light;
+      font-size: 36px;
     }
   }
 }

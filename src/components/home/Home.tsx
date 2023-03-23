@@ -3,8 +3,10 @@ import styles from "./Home.module.scss";
 import avatar from "assets/images/s-character.png";
 import CategoriesCarousel from "components/home/categories-carousel/CategoriesCarousel";
 import ReactTypingEffect from "react-typing-effect";
+import useDetectMobile from "hooks/DetectMobile";
 
 const Home = () => {
+  const isMobile = useDetectMobile();
   return (
     <>
       <div className={styles["home"]}>
@@ -24,7 +26,10 @@ const Home = () => {
               eraseDelay={300}
               eraseSpeed={150}
               typingDelay={200}
-              text={["Lê Viết Sinh.", "a Front End Developer."]}
+              text={[
+                "Lê Viết Sinh",
+                isMobile ? "a FE Developer" : "a Front End Developer",
+              ]}
             />
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
