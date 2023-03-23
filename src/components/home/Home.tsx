@@ -15,14 +15,16 @@ const Home = () => {
             <img src={avatar} alt="S Character" />
           </div>
           <div className={styles["home-greeting"]}>
+            <div className={styles["home__hello"]}>Hi everyone,</div>
             <ReactTypingEffect
               staticText={"I am"}
               className={styles["writer"]}
               cursorClassName={styles["writer__cursor"]}
-              speed={300}
-              eraseDelay={200}
+              speed={100}
+              eraseDelay={300}
+              eraseSpeed={150}
               typingDelay={200}
-              text={["a Front End Developer.", "World!"]}
+              text={["Lê Viết Sinh.", "a Front End Developer."]}
             />
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus

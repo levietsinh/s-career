@@ -109,17 +109,30 @@
     }
 
     p {
+      font-family: "RobotoSlab";
       font-size: 20px;
       line-height: 1.6;
+      margin-top: 8px;
+      text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+        1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     }
+  }
+  &__hello {
+    font-family: "RobotoSlab";
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 8px;
   }
 }
 
 .writer {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 44px;
   color: $red-bean;
   margin-bottom: 12px;
+  font-family: "RobotoSlab";
+  font-weight: 900;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
   &__cursor {
     color: $red-light;
     font-size: 44px;
