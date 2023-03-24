@@ -1,22 +1,23 @@
 @import "assets/styles/common.scss";
 
 .btn {
-  background-color: $red-coral;
+  background: linear-gradient(90deg, rgba(129,0,0,1) 0%, rgba(206,18,18,1) 40%, rgba(255,193,193,1) 100%);
   color: white;
   font-weight: bold;
-  border: 1px solid transparent;
+  border: 1px solid white;
   border-radius: 20px;
   padding: 12px 36px;
+  box-sizing: border-box;
   cursor: pointer;
-  transition: .4s;
-  &:hover {
-    border-color: $red-coral;
+  transition: .6s;
+  &:hover, &__active {
+    border: 1px solid $red-coral;
     color: $red-coral;
-    background-color: white;
-    transition: .4s;
+    background: white;
+    transition: .6s;
   }
   &:active {
     transform: translateY(4px);
-    background-color: $red-misty;
+    background: $red-misty;
   }
 }

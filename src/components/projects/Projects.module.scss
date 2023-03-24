@@ -1,3 +1,38 @@
 .projects {
-  min-height: 80vh;
+  padding-top: calc(73px + 10vh);
+
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  &__type {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+  }
+
+  &__list {
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+
+      .project {
+        width: 25%;
+        padding: 12px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+        &__image {
+          width: 100%;
+
+          img {
+            width: 100%;
+
+          }
+        }
+      }
+    }
+  }
 }
