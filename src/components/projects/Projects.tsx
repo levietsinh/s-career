@@ -2,30 +2,27 @@ import React, { useState } from "react";
 import clsx from "clsx";
 import styles from "./Projects.module.scss";
 import SButton from "components/common/s-button/SButton";
+import {projects} from "data/projects";
 
+interface IProject {
+  thumbnail: string,
+  title: string,
+  git: string,
+  technical: string
+}
 const Projects = () => {
-  const [techTypes, setTechTypes] = useState([
+  const techTypes = [
     {
-      type: "VueJs",
-      active: true,
+      title: "VueJs",
+      type: "vue",
     },
     {
-      type: "NuxtJs",
-      active: false,
+      title: "ReactJs",
+      type: "react",
     },
-    {
-      type: "ReactJs",
-      active: false,
-    },
-  ]);
+  ];
 
-  const handleGetProjects = (index: number) => {
-    const newList: any[] = [];
-    techTypes.forEach((item, ind) =>
-      newList.push({ ...item, active: index === ind })
-    );
-    setTechTypes([...newList]);
-  };
+  const [activeType, setActiveType] = useState("vue");
 
   return (
     <div className={clsx(styles["projects"], "container")}>
@@ -34,44 +31,28 @@ const Projects = () => {
         {techTypes.map((item, index) => (
           <SButton
             key={index}
-            name={item.type}
-            onClick={() => handleGetProjects(index)}
-            isActive={item.active}
+            name={item.title}
+            onClick={() => setActiveType(item.type)}
+            isActive={activeType === item.type}
           />
         ))}
       </div>
       <div className={styles["projects__list"]}>
         <ul>
-          <li className={styles["project"]}>
-            <div className={styles["project__image"]}>
-              <img
-                src="https://mevn-public.s3-ap-southeast-1.amazonaws.com/marketenterprise.vn/wp-images/2021/04/06170614/vuejs.png"
-                alt="Project Image"
-              />
-            </div>
-            <div className={styles["project__title"]}>Title</div>
-            
-          </li>
-          <li className={styles["project"]}>
-            <div className={styles["project__image"]}>
-              <img
-                src="https://mevn-public.s3-ap-southeast-1.amazonaws.com/marketenterprise.vn/wp-images/2021/04/06170614/vuejs.png"
-                alt="Project Image"
-              />
-            </div>
-            <div className={styles["project__title"]}>Title</div>
-
-          </li>
-          <li className={styles["project"]}>
-            <div className={styles["project__image"]}>
-              <img
-                src="https://mevn-public.s3-ap-southeast-1.amazonaws.com/marketenterprise.vn/wp-images/2021/04/06170614/vuejs.png"
-                alt="Project Image"
-              />
-            </div>
-            <div className={styles["project__title"]}>Title</div>
-
-          </li>
+          {
+            projects["vue"].map((item: IProject, index: number) => (
+            <li className={styles["project"]} key={index}>
+              <div className={styles["project__image"]}>
+                <img
+                  src="https://mevn-public.s3-ap-southeast-1.amazonaws.com/marketenterprise.vn/wp-images/2021/04/06170614/vuejs.png"
+                  alt="Project Image"
+                />
+              </div>
+              <div className={styles["project__title"]}>Title</div>
+              <div>Git: <span></span></div>
+            </li>
+            ))
+          }
         </ul>
       </div>
       <a href="https://codelearn.io/sharing/7-meo-va-thu-thuat-trong-javascript">
