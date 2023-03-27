@@ -17,13 +17,13 @@ const Home = () => {
             <img src={avatar} alt="S Character" />
           </div>
           <div className={styles["home-greeting"]}>
-            <div className={styles["home__hello"]}>Hi everyone,</div>
+            <div className={styles["home__hello"]}>Hello, It's me</div>
             <ReactTypingEffect
               staticText={"I am"}
               className={styles["writer"]}
               cursorClassName={styles["writer__cursor"]}
               speed={100}
-              eraseDelay={300}
+              eraseDelay={1500}
               eraseSpeed={150}
               typingDelay={200}
               text={[

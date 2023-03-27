@@ -8,6 +8,7 @@ import useDetectMobile from "hooks/DetectMobile";
 import styles from "./Header.module.scss";
 import clsx from "clsx";
 import logoSVG from "assets/images/logo-red.svg";
+import print from "print-js";
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(0);
@@ -18,7 +19,13 @@ const Header = () => {
   const handleNavigate = (path: string) => {
     navigate(process.env.PUBLIC_URL + path);
     setIsShowMenu(false);
-  }
+  };
+
+  const printResume = (e: any) => {
+    console.log("Print");
+    e.preventDefault();
+    print("https://levietsinh.github.io/cv/");
+  };
 
   useEffect(() => {
     const onScroll = () => setIsScroll(window.pageYOffset);
@@ -35,7 +42,10 @@ const Header = () => {
   return (
     <>
       {isMobile ? (
-        <header className={styles["header-mobile"]} style={{height: isShowMenu ? '' : 0}}>
+        <header
+          className={styles["header-mobile"]}
+          style={{ height: isShowMenu ? "" : 0 }}
+        >
           <div className={styles["header-mobile__top"]}>
             <div
               className={styles["header-mobile__logo"]}
@@ -67,21 +77,34 @@ const Header = () => {
             )}
           >
             <div className={styles["logo"]}>
-              <img
-                src={logoSVG}
-                alt="S Logo"
-              />
+              <img src={logoSVG} alt="S Logo" />
             </div>
             <nav className={clsx(styles["header-mobile__nav"])}>
               <ul>
-                <li onClick={() => handleNavigate("")}>Home</li>
-                <li onClick={() => handleNavigate("/libraries")}>Libraries</li>
-                <li onClick={() => handleNavigate("/projects")}>Projects</li>
-                <li>
+                <li
+                  onClick={() => handleNavigate("")}
+                  style={{ ["--i" as string]: 1 }}
+                >
+                  Home
+                </li>
+                <li
+                  onClick={() => handleNavigate("/libraries")}
+                  style={{ ["--i" as string]: 2 }}
+                >
+                  Libraries
+                </li>
+                <li
+                  onClick={() => handleNavigate("/projects")}
+                  style={{ ["--i" as string]: 3 }}
+                >
+                  Projects
+                </li>
+                <li style={{ ["--i" as string]: 4 }}>
                   <img
                     className={styles["header-mode"]}
                     src={require(`assets/images/dark-mode.png`)}
                     alt="Dark Mode"
+                    onClick={printResume}
                   />
                 </li>
               </ul>
@@ -109,7 +132,7 @@ const Header = () => {
               <li onClick={() => handleNavigate("")}>Home</li>
               <li onClick={() => handleNavigate("/libraries")}>Libraries</li>
               <li onClick={() => handleNavigate("/projects")}>Projects</li>
-              <li>
+              <li onClick={printResume}>
                 <img
                   className={styles["header-mode"]}
                   src={require(`assets/images/dark-mode${

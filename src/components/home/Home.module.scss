@@ -121,6 +121,9 @@
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 8px;
+    opacity: 0;
+    animation: slideRight 1.2s ease forwards;
+    -webkit-animation: slideRight 1.2s ease forwards;
   }
 }
 
@@ -135,6 +138,9 @@
     color: $red-light;
     font-size: 48px;
   }
+  display: inline-block;
+  animation: slideTop 1.2s ease forwards;
+  -webkit-animation: slideTop 1.2s ease forwards;
 }
 
 @media screen and (max-width: 375px) {
@@ -313,3 +319,6 @@
     }
   }
 }
+
+@include animation-slide-right;
+@include animation-slide-top;
