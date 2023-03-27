@@ -17,7 +17,7 @@ const Home = () => {
             <img src={avatar} alt="S Character" />
           </div>
           <div className={styles["home-greeting"]}>
-            <div className={styles["home__hello"]}>Hello, It's me</div>
+            <div className={styles["home__hello"]}>Hello, It's me</div> <br />
             <ReactTypingEffect
               staticText={"I am"}
               className={styles["writer"]}
