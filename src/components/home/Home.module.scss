@@ -6,6 +6,11 @@
   overflow: hidden;
   position: relative;
 
+  &__cv {
+    margin-top: 20px;
+    text-align: center;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -86,11 +91,18 @@
   }
 
   &-avatar {
-    width: fit-content;
-    height: fit-content;
-    border: 10px solid white;
-    border-radius: 50%;
     margin-left: 10%;
+    animation: zoomOut 1s ease forwards;
+    -webkit-animation: zoomOut 1s ease forwards;
+    img {
+      width: 280px;
+      height: 280px;
+      border: 10px solid white;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: grayscale(50%);
+      -webkit-filter: grayscale(50%);
+    }
   }
 
   &-greeting {
@@ -162,7 +174,7 @@
     }
 
     &-intro {
-      height: 86vh;
+      height: 78vh;
       width: 92%;
       margin-top: 12vh;
       flex-direction: column;
@@ -241,7 +253,7 @@
     }
 
     &-intro {
-      height: 84vh;
+      height: 78vh;
       width: 92%;
       margin-top: 12vh;
       flex-direction: column;
@@ -323,3 +335,4 @@
 
 @include animation-slide-right;
 @include animation-slide-top;
+@include animation-zoom-out;

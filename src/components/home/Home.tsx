@@ -1,12 +1,21 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import avatar from "assets/images/s-character.png";
+import avatar from "assets/images/avatar.jpg";
 import CategoriesCarousel from "components/home/categories-carousel/CategoriesCarousel";
 import ReactTypingEffect from "react-typing-effect";
 import useDetectMobile from "hooks/DetectMobile";
+import SButton from "components/common/s-button/SButton";
 
 const Home = () => {
   const isMobile = useDetectMobile();
+
+  const printResume = () => {
+    window.open(
+      "https://levietsinh.github.io/cv/",
+      "PRINT",
+      "height=910,width=812"
+    );
+  };
   return (
     <>
       <div className={styles["home"]}>
@@ -38,6 +47,9 @@ const Home = () => {
               Nostrum, perferendis.
             </p>
           </div>
+        </div>
+        <div className={styles["home__cv"]}>
+          <SButton name="Watch CV" onClick={printResume} />
         </div>
       </div>
       <CategoriesCarousel />

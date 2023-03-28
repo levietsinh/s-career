@@ -8,7 +8,6 @@ import useDetectMobile from "hooks/DetectMobile";
 import styles from "./Header.module.scss";
 import clsx from "clsx";
 import logoSVG from "assets/images/logo-red.svg";
-import print from "print-js";
 
 const Header = () => {
   const [isScroll, setIsScroll] = useState(0);
@@ -19,12 +18,6 @@ const Header = () => {
   const handleNavigate = (path: string) => {
     navigate(process.env.PUBLIC_URL + path);
     setIsShowMenu(false);
-  };
-
-  const printResume = (e: any) => {
-    console.log("Print");
-    e.preventDefault();
-    print("https://levietsinh.github.io/cv/");
   };
 
   useEffect(() => {
@@ -104,7 +97,6 @@ const Header = () => {
                     className={styles["header-mode"]}
                     src={require(`assets/images/dark-mode.png`)}
                     alt="Dark Mode"
-                    onClick={printResume}
                   />
                 </li>
               </ul>
@@ -132,7 +124,7 @@ const Header = () => {
               <li onClick={() => handleNavigate("")}>Home</li>
               <li onClick={() => handleNavigate("/libraries")}>Libraries</li>
               <li onClick={() => handleNavigate("/projects")}>Projects</li>
-              <li onClick={printResume}>
+              <li>
                 <img
                   className={styles["header-mode"]}
                   src={require(`assets/images/dark-mode${

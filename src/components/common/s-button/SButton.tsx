@@ -6,7 +6,7 @@ import styles from "./SButton.module.scss";
 
 type Props = {
   name: String;
-  onClick: React.MouseEventHandler;
+  onClick?: React.MouseEventHandler;
   isActive?: boolean;
 };
 
