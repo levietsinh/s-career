@@ -1,3 +1,5 @@
+@import "assets/styles/common.scss";
+
 .projects {
   padding-top: calc(73px + 10vh);
 
@@ -16,12 +18,13 @@
   &__list {
     margin-bottom: 32px;
 
-    ul {
+    .project {
       display: flex;
       list-style: none;
       justify-content: space-around;
+      flex-wrap: wrap;
 
-      .project {
+      &__item {
         width: 25%;
         border-radius: 8px;
         padding: 12px;
@@ -35,28 +38,63 @@
         border-radius: 16px;
         transition: 1s;
 
-        &__image {
-          width: 100%;
-
-          img {
-            width: 100%;
-            cursor: pointer;
-          }
-        }
-
-        &__title {
-          margin-top: 12px;
-          text-align: center;
-          font-size: 18px;
-          font-weight: bold;
-          cursor: pointer;
-        }
 
         &:hover {
           transition: 1s;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
             rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
             rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        ul {
+          list-style: unset;
+
+          li {
+            a {
+              color: $red-bean;
+            }
+
+            &+li {
+              margin-top: 12px;
+            }
+          }
+        }
+      }
+
+      &__image {
+        width: 100%;
+
+        img {
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+
+      &__title {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 12px;
+
+        a {
+          text-decoration: unset;
+          color: $red-bean;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects {
+    padding-top: calc(62px + 40px);
+    .project {
+      &__item {
+        width: 80%;
+        +.project__item {
+          margin-top: 20px;
         }
       }
     }

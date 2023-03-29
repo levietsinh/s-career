@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import clsx from "clsx";
 import styles from "./Projects.module.scss";
 import SButton from "components/common/s-button/SButton";
-import {projects} from "data/projects";
+import { projects } from "data/projects";
 
 interface IProject {
-  thumbnail: string,
-  title: string,
-  git: string,
-  technical: string
+  thumbnail: string;
+  url: string,
+  title: string;
+  gitLink: string;
+  gitTitle: string;
+  technical: string;
 }
 const Projects = () => {
   const techTypes = [
@@ -38,21 +40,30 @@ const Projects = () => {
         ))}
       </div>
       <div className={styles["projects__list"]}>
-        <ul>
-          {
-            projects["vue"].map((item: IProject, index: number) => (
-            <li className={styles["project"]} key={index}>
-              <div className={styles["project__image"]}>
-                <img
-                  src="https://mevn-public.s3-ap-southeast-1.amazonaws.com/marketenterprise.vn/wp-images/2021/04/06170614/vuejs.png"
-                  alt="Project Image"
-                />
-              </div>
-              <div className={styles["project__title"]}>Title</div>
-              <div>Git: <span></span></div>
-            </li>
-            ))
-          }
+        <ul className={styles["project"]}>
+          {projects[activeType as keyof typeof projects].map(
+            (item: IProject, index: number) => (
+              <li className={styles["project__item"]} key={index}>
+                <div className={styles["project__image"]}>
+                  <img src={item.thumbnail} alt="Project Image" />
+                </div>
+                <div className={styles["project__title"]}>
+                  <a href={item.url} target="_blank">
+                    {item.title}
+                  </a>
+                </div>
+                <ul>
+                  <li>
+                    Git:{" "}
+                    <a href={item.gitLink} target="_blank">
+                      {item.gitTitle}
+                    </a>
+                  </li>
+                  <li>Technical: {item.technical}</li>
+                </ul>
+              </li>
+            )
+          )}
         </ul>
       </div>
       <a href="https://codelearn.io/sharing/7-meo-va-thu-thuat-trong-javascript">
