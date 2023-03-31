@@ -17,7 +17,7 @@ const Categories = () => {
 
   const navigate = useNavigate();
 
-  const settings:Settings = {
+  const settings: Settings = {
     className: "center",
     autoplay: true,
     centerMode: true,
@@ -30,42 +30,46 @@ const Categories = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const handleSeeMore = () => {
-    navigate(`${process.env.PUBLIC_URL}/libraries`)
-  }
+    navigate(`${process.env.PUBLIC_URL}/libraries`);
+  };
 
   const handleGotoDetails = (id: number) => {
-    navigate(`${process.env.PUBLIC_URL}/libraries/${id}`)
-  }
+    navigate(`${process.env.PUBLIC_URL}/libraries/${id}`);
+  };
 
   return (
     <div className={styles["categories"]}>
       <h2>Libraries</h2>
       <Slider {...settings}>
         {categoriesList.slice(0, 6).map((item: ICategory, index) => (
-          <div key={item.name} className={styles["category"]} onClick={() =>handleGotoDetails(index + 1)}>
+          <div
+            key={item.name}
+            className={styles["category"]}
+            onClick={() => handleGotoDetails(index + 1)}
+          >
             <div className={styles["category-icon"]}>
               <img
                 className={item.name === "ReactJs" ? styles["rotate"] : ""}
@@ -78,7 +82,7 @@ const Categories = () => {
         ))}
       </Slider>
       <div className={styles["categories__button"]}>
-        <SButton name="See more..." onClick={handleSeeMore}/>
+        <SButton name="See more..." onClick={handleSeeMore} />
       </div>
     </div>
   );
