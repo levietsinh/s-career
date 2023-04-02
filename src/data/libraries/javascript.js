@@ -9,6 +9,34 @@ export const data = {
       name: "Những bài toán Logic (Phần 1)",
       link: "https://codelearn.io/sharing/30-cau-phong-van-javascript-phan-1",
     },
+    {
+      name: "Reverse a String",
+      link: "https://jsfiddle.net/tmx7ys3j/2/",
+    },
+    {
+      name: "Factorialize (Giai thừa hóa) a Number",
+      link: "https://jsfiddle.net/bxf1y3ta/4/",
+    },
+    {
+      name: "Check for Palindromes (Chuỗi mà khi Reverse thì không đổi nghĩa)",
+      link: "https://jsfiddle.net/w7380rbs/1/",
+    },
+    {
+      name: "Find the Longest Word in a String",
+      link: "https://jsfiddle.net/jh0m5fov/",
+    },
+    {
+      name: "Title Case a Sentence (I'm a little tea pot => I'm A Little Tea Pot.)",
+      link: "https://jsfiddle.net/zvmw3pxt/",
+    },
+    {
+      name: "Truncate a string",
+      link: "https://jsfiddle.net/2gx913dv/",
+    },
+    {
+      name: "The same element array",
+      link: "https://jsfiddle.net/2gx913dv/1/",
+    },
   ],
   library: [
     {
@@ -46,12 +74,12 @@ export const data = {
 <span class="pl-kos">}</span><span class="pl-kos">)</span></pre>
 </div>
 <div>This approach won't re-render the entire list due to VueJS implementation.</div>
-      `
+      `,
     },
     {
-      question: "What are the new features in Javascript ES6 (ECMAScript 2015)?",
-      answer:
-      `
+      question:
+        "What are the new features in Javascript ES6 (ECMAScript 2015)?",
+      answer: `
       <ul class="content">
 <li class="h2-title" style=""><br />
 <h3 id="1-let-and-const-keywords-"><strong>1. let and const keywords :</strong></h3>
@@ -152,12 +180,11 @@ export function getName(fullName) {
 console.log(num); // 50</code></pre>
 </li>
 </ul>
-      `
+      `,
     },
     {
       question: "Các giá trị Falsy trong Javascript là gì?",
-      answer: 
-      `
+      answer: `
         <div>Là các giá trị khi chuyển đổi thành Boolean thì sẽ return về <strong>FALSE</strong></div>
         <div class="code-space">
           <p>''</p>
@@ -169,7 +196,7 @@ console.log(num); // 50</code></pre>
           <p>-0</p>
           <p>0n // BigInt, when used as a boolean, follows the same rule as a Number</p>
         </div>
-      `
+      `,
     },
     {
       question: "What are the available methods in Javascript?",
@@ -198,11 +225,11 @@ console.log(num); // 50</code></pre>
         <li>toUpperCase () &ndash; Chuyển văn bản th&agrave;nh chữ hoa</li>
         <li>valueOf () &ndash; Trả về gi&aacute; trị ban đầu của đối tượng được chỉ định</li>
       </ul>
-      `
+      `,
     },
     {
       question: "What is the question?",
-      answer: "Updating..."
+      answer: "Updating...",
     },
   ],
 };

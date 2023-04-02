@@ -5,6 +5,10 @@ export const data = {
       name: "Github - React Interview Questions & Answers",
       link: "https://github.com/sudheerj/reactjs-interview-questions",
     },
+    {
+      name: "KungfuTech - ReactJs Interview Questions & Answers",
+      link: "https://kungfutech.edu.vn/phong-van-pro?categorySlug=reactjs",
+    },
   ],
   library: [
     {
