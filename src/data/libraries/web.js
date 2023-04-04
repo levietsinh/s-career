@@ -3,6 +3,21 @@ export const data = {
   references: [],
   library: [
     {
+      question: "How does website work?",
+      answer: `
+      <ol>
+        <li><span>The user types a website URL into the browser's address bar and hits Enter. </span></li>
+        <li><span>The browser sent a request to the server that hosts the website.</span></li>
+        <li><span>The web server receives the request and looks for the requested resource on the server's file system or database. if the resource is found, the servers send it back to the browsers in the form of an&nbsp;HTTP response. </span></li>
+        <li><span>The browser receives the HTTP response and starts processing it. the response contains HTML, CSS, JS, and other assets that are needed to render the website.</span></li>
+        <li><span>The browser parsed HTML and constructs the DOM tree The browser fetches any internal resource such as images, script, and datasheet.</span></li>
+        <li><span>The browser applies the CSS style to the dom element to determine the layout and visual experience of the page.</span></li>
+        <li><span>The browser executes any js code that is included in the page. the JS can modify the DOM to make a network request and update the page content dynamically.</span></li>
+        <li><span>The browser paints the pixel on the screen on the final layout and styling of the DOM element.</span></li>
+        <li><span>The&nbsp;website is now displayed on the screen for the user to interact with.</span></li>
+      </ol>`,
+    },
+    {
       question: "HTTP Status Code?",
       answer: `<ul>
           <li>
@@ -170,7 +185,7 @@ export const data = {
     },
     {
       question: "What is the OAuth2?",
-      answer: `<a href="https://viblo.asia/p/tim-hieu-doi-chut-ve-oauth2-eW65GvMLlDO" target="_blank">Tìm hiểu đôi chút về OAuth2</a>`
+      answer: `<a href="https://viblo.asia/p/tim-hieu-doi-chut-ve-oauth2-eW65GvMLlDO" target="_blank">Tìm hiểu đôi chút về OAuth2</a>`,
     },
     {
       question: "What is the JWT?",
@@ -188,8 +203,9 @@ export const data = {
       answer: "",
     },
     {
-      question: "Nên lưu token ở đâu? localStorage, sessionStorage hay Cookies?",
-      answer: ""
-    }
+      question:
+        "Nên lưu token ở đâu? localStorage, sessionStorage hay Cookies?",
+      answer: "",
+    },
   ],
 };
