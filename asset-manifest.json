@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/s-career/static/css/main.7224bf98.css",
-    "main.js": "/s-career/static/js/main.985d26a1.js",
+    "main.js": "/s-career/static/js/main.daefe2f0.js",
     "static/media/avatar.jpg": "/s-career/static/media/avatar.7cefb53d8629b7248620.jpg",
     "static/media/s-logo-red.png": "/s-career/static/media/s-logo-red.04d499825e77f40a5715.png",
     "static/media/logo-red-mobile.png": "/s-career/static/media/logo-red-mobile.d89db89e6dcfbb3f589a.png",
@@ -37,10 +37,10 @@
     "static/media/slick.woff": "/s-career/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/s-career/index.html",
     "main.7224bf98.css.map": "/s-career/static/css/main.7224bf98.css.map",
-    "main.985d26a1.js.map": "/s-career/static/js/main.985d26a1.js.map"
+    "main.daefe2f0.js.map": "/s-career/static/js/main.daefe2f0.js.map"
   },
   "entrypoints": [
     "static/css/main.7224bf98.css",
-    "static/js/main.985d26a1.js"
+    "static/js/main.daefe2f0.js"
   ]
 }
