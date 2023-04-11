@@ -10,38 +10,50 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $red-coral; 
+  background: $red-coral;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $red-bean; 
+  background: $red-bean;
 }
 
-.code-space, .prettyprinted {
+.code-space,
+.prettyprinted,
+code {
   margin: 12px 0;
   padding: 8px 12px;
   background-color: #ededed !important;
-  font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace!important;
-  
-  .hljs-string, .tag {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace !important;
+
+  .hljs-string,
+  .tag {
     color: #008;
   }
-  .typ, .script {
+  .typ,
+  .script {
     color: #bd4147;
   }
-  .kwd, .parameter {
+  .kwd,
+  .parameter {
     color: #4271ae;
   }
-  .pln, .attr-name, .keyword {
+  .pln,
+  .attr-name,
+  .keyword {
     color: #718c00;
   }
-  .pun, .hljs-params, .punctuation, .string, .operator {
+  .pun,
+  .hljs-params,
+  .punctuation,
+  .string,
+  .operator {
     color: #212529;
   }
 }

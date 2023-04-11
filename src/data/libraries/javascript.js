@@ -47,19 +47,19 @@ export const data = {
       question: "What are the array detection mutation methods?",
       answer: `
       <p dir="auto">As the name suggests, mutation methods modifies the original array.</p>
-<p dir="auto">Below are the list of array mutation methods which trigger view updates.</p>
-<ol dir="auto" style="list-style: auto; padding-left: 24px;">
-<li>push()</li>
-<li>pop()</li>
-<li>shift()</li>
-<li>unshift()</li>
-<li>splice()</li>
-<li>sort()</li>
-<li>reverse()</li>
-</ol>
-<p dir="auto">If you perform any of the above mutation method on the list then it triggers view update. For example, push method on array named 'items' trigger a view update,</p>
-<pre class="code-space"><span class="pl-s1">vm</span><span class="pl-kos">.</span><span class="pl-c1">todos</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">message</span>: <span class="pl-s">'Baz'</span> <span class="pl-kos">}</span><span class="pl-kos">)</span></pre>      
-`,
+      <p dir="auto">Below are the list of array mutation methods which trigger view updates.</p>
+      <ol dir="auto" style="list-style: auto; padding-left: 24px;">
+        <li>push()</li>
+        <li>pop()</li>
+        <li>shift()</li>
+        <li>unshift()</li>
+        <li>splice()</li>
+        <li>sort()</li>
+        <li>reverse()</li>
+      </ol>
+      <p dir="auto">If you perform any of the above mutation method on the list then it triggers view update. For example, push method on array named 'items' trigger a view update,</p>
+      <pre class="code-space"><span class="pl-s1">vm</span><span class="pl-kos">.</span><span class="pl-c1">todos</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-kos">{</span> <span class="pl-c1">message</span>: <span class="pl-s">'Baz'</span> <span class="pl-kos">}</span><span class="pl-kos">)</span></pre>      
+      `,
     },
     {
       question: "What are the array detection non-mutation methods?",
@@ -232,8 +232,15 @@ console.log(num); // 50</code></pre>
       `,
     },
     {
-      question: "What is the question?",
-      answer: "Updating...",
+      question: "'this' in Javascript?",
+      answer: `<ul>
+      <li>Trong<span>&nbsp;</span><code>method</code>,<span>&nbsp;</span><code>this</code><span>&nbsp;</span>tham chiếu đến đối tượng l&agrave; chủ của method.</li>
+      <li>Trong function,<span>&nbsp;</span><code>this</code><span>&nbsp;</span>tham chiếu đến đối tượng to&agrave;n cục (<code>Global</code>).</li>
+      <li>Trong function ở<span>&nbsp;</span><code>strict mode</code>,<span>&nbsp;</span><code>this</code><span>&nbsp;</span>kh&ocirc;ng được định nghĩa (<code>undefined</code>)</li>
+      <li>Sử dụng một m&igrave;nh,<span>&nbsp;</span><code>this</code><span>&nbsp;</span>tham chiếu đến đối tượng to&agrave;n cục (<code>Global</code>).</li>
+      <li>Trong DOM Event handlers,<span>&nbsp;</span><code>this</code><span>&nbsp;</span>tham chiếu đến phần tử HTML nhận sự kiện.</li>
+      <li>Gi&aacute; trị của<span>&nbsp;</span><code>this</code><span>&nbsp;</span>c&ograve;n chịu ảnh hưởng khi sử dụng một số phương thức đặc biệt của JS như:<span>&nbsp;</span><code>call()</code>,<span>&nbsp;</span><code>apply()</code>,<span>&nbsp;</span><code>forEach()</code>, ...</li>
+      </ul>`,
     },
   ],
 };

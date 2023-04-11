@@ -9,10 +9,10 @@ export const data = {
         <li><span>The user types a website URL into the browser's address bar and hits Enter.&nbsp;</span><span>The browser sent a request to the server that hosts the website.</span></li>
         <li><span>The web server receives the request and looks for the requested resource on the server's file system or database. If the resource is found, the servers send it back to the browsers in the form of an&nbsp;HTTP response.</span></li>
         <li><span>The browser receives the HTTP response and starts processing it. The response contains HTML, CSS, JS, and other assets that are needed to render the website.</span></li>
-        <li><span>The browser parsed HTML and constructs the DOM tree </span></li>
+        <li><span>The browser parsed HTML and constructs the DOM tree.</span></li>
         <li><span>The browser fetches any internal resources such as images, scripts, and datasheets.</span></li>
-        <li><span>The browser applies the CSS style to the dom element to determine the layout and visual experience of the page.</span></li>
-        <li><span>The browser executes any js code that is included in the page. The JS can modify the DOM to make a network request and update the page content dynamically.</span></li>
+        <li><span>The browser applies the CSS style to the DOM element to determine the layout and visual experience of the page.</span></li>
+        <li><span>The browser executes any JS code that is included in the page. The JS can modify the DOM to make a network request and update the page content dynamically.</span></li>
         <li><span>The browser paints the pixel on the screen on the final layout and styling of the DOM element.</span></li>
         <li><span>The website is now displayed on the screen for the user to interact with.</span></li>
       </ol>`,
