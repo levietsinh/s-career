@@ -8,6 +8,15 @@ import SButton from "components/common/s-button/SButton";
 
 const Home = () => {
   const isMobile = useDetectMobile();
+  
+  const getMoment = (): string => {
+    const nowDate = new Date();
+    const currentHour = nowDate.getHours();
+    if(currentHour > 4 && currentHour < 13) return 'morning';
+    else if(currentHour > 12 && currentHour < 18) return 'afternoon';
+    else if(currentHour > 18 && currentHour < 21) return 'evening';
+    else return 'night';
+  }
 
   const printResume = () => {
     window.open(
@@ -26,7 +35,7 @@ const Home = () => {
             <img src={avatar} alt="S Character" />
           </div>
           <div className={styles["home-greeting"]}>
-            <div className={styles["home__hello"]}>Hello, It's me</div> <br />
+            <div className={styles["home__hello"]}>Good { getMoment() }, It's me</div> <br />
             <ReactTypingEffect
               staticText={"I am"}
               className={styles["writer"]}
